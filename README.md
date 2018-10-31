@@ -1,8 +1,16 @@
 # United States Marijuana Revenue & Tax Tracker
-*  [About The Data](#about-the-data)
 *  [Built With](#built-with)
+*  [About The Data](#about-the-data)
 *  [Getting Started](#getting-started)
 *  [GraphQL Query Examples](#graphql-query-examples)
+
+## Built With
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming Language
+* [React](https://reactjs.org) - Frontend Framework
+* [React Static](https://react-static.js.org) - Static Site Generator
+* [Axios](https://www.npmjs.com/package/axios) - HTTP Requests
+* [Babel 7](https://babeljs.io) - Transpiler/Transcompiler
+* [ESLint](https://eslint.org) - Linter
 
 ## About The Data
 The data comes directly from each State. Below is a list of available states and data sources.
@@ -26,15 +34,6 @@ The data comes directly from each State. Below is a list of available states and
 | Oregon (OR)        | 00/00/0000        | 00/00/0000             | [Source]()
 | Washington(WA)     | 00/00/0000        | 00/00/0000             | [Source]()
 | Vermont (VT)       | 00/00/0000        | 00/00/0000             | [Source]()
-
-## Built With
-* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming Language
-* [React](https://reactjs.org) - Frontend Framework
-* [React Static](https://react-static.js.org) - Static Site Generator
-* [Axios](https://www.npmjs.com/package/axios) - HTTP Requests
-* [Babel 7](https://babeljs.io) - Transpiler/Transcompiler
-* [ESLint](https://eslint.org) - Linter
-
 
 ## Getting Started
 **1. Install Dependencies:**
