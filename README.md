@@ -7,26 +7,25 @@
 ## About The Data
 The data comes directly from each State. Below is a list of available states and data sources.
 
-| State            | Medical Legalized | Recreational Legalized | Data Source                      |
-| -----------------|-------------------| ---------------------- | ---------------
-| Alaska (AK)      | right-aligned     | 02/24/2015             | [Source]()
-| Arizona (AZ)     | centered          |                        | [Source]()
-| Arkansas (AR)    | are neat          |                        | [Source]()
-| California (CA)  | are neat          | 11/08/2016             | [Source]()
-| Colorado (CO)    |                   | 11/06?/2012            | [Source](https://www.colorado.gov/pacific/revenue/colorado-marijuana-sales-reports)
-| Florida (FL)     | are neat          |                        | [Source]()
-
-* [Hawaii (HI)]()
-* [Louisiana (LA)]()
-* [Maine (ME)]()
-* [Massachusetts (MA)]()
-* [Montana (MT)]()
-* [Nevada (NV)]()
-* [New Mexico (NM)]()
-* [Oklahoma (OK)]()
-* [Oregon (OR)]()
-* [Washington(WA)]()
-* [Vermont (VT)]()
+| State              | Medical Legalized | Recreational Legalized | Data Source                      |
+| -------------------|-------------------| ---------------------- | ---------------
+| Alaska (AK)        | 00/00/0000        | 02/24/2015             | [Source]()
+| Arizona (AZ)       | 00/00/0000        | 00/00/0000             | [Source]()
+| Arkansas (AR)      | 00/00/0000        | 00/00/0000             | [Source]()
+| California (CA)    | 00/00/0000        | 11/08/2016             | [Source]()
+| Colorado (CO)      | 00/00/0000        | 11/06/2012             | [Source](https://www.colorado.gov/pacific/revenue/colorado-marijuana-sales-reports)
+| Florida (FL)       | 00/00/0000        | 00/00/0000             | [Source]()
+| Hawaii (HI)        | 00/00/0000        | 00/00/0000             | [Source]()
+| Louisiana (LA)     | 00/00/0000        | 00/00/0000             | [Source]()
+| Maine (ME)         | 00/00/0000        | 00/00/0000             | [Source]()
+| Massachusetts (MA) | 00/00/0000        | 00/00/0000             | [Source]()
+| Montana (MT)       | 00/00/0000        | 00/00/0000             | [Source]()
+| Nevada (NV)        | 00/00/0000        | 00/00/0000             | [Source]()
+| New Mexico (NM)    | 00/00/0000        | 00/00/0000             | [Source]()
+| Oklahoma (OK)      | 00/00/0000        | 00/00/0000             | [Source]()
+| Oregon (OR)        | 00/00/0000        | 00/00/0000             | [Source]()
+| Washington(WA)     | 00/00/0000        | 00/00/0000             | [Source]()
+| Vermont (VT)       | 00/00/0000        | 00/00/0000             | [Source]()
 
 ## Built With
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming Language
