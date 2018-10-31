@@ -1,4 +1,4 @@
-# United States Marijauna Revenue & Tax Tracker
+# United States Marijuana Revenue & Tax Tracker
 *  [About The Data](#about-the-data)
 *  [Built With](#built-with)
 *  [Getting Started](#getting-started)
