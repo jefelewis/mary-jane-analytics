@@ -5,9 +5,24 @@
 *  [GraphQL Query Examples](#graphql-query-examples)
 
 ## About The Data
-Only a fraction of government agencies provide public APIs, which are usually poorly documented and built on REST architecture. Our mission is to retrieve that valuable data and convert them into an intuitive and modern GraphQL API.
-
-The data comes directly from the United States Energy Information Administration's REST API. The REST endpoints have been mapped as GraphQL types and resolvers.
+The data comes directly from each State. Below is a list of available states and data sources.
+* [Alaska (AK)]()
+* [Arizona (AZ)]()
+* [Arkansas (AR)]()
+* [California (CA)]()
+* [Colorado (CO)]()
+* [Florida (FL)]()
+* [Hawaii (HI)]()
+* [Louisiana (LA)]()
+* [Maine (ME)]()
+* [Massachusetts (MA)]()
+* [Montana (MT)]()
+* [Nevada (NV)]()
+* [New Mexico (NM)]()
+* [Oklahoma (OK)]()
+* [Oregon (OR)]()
+* [Washington(WA)]()
+* [Vermont (VT)]()
 
 ## Built With
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming Language
