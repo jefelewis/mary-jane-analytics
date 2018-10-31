@@ -1,8 +1,8 @@
 {
-  "name": "react-static-example-basic",
-  "version": "1.0.1",
+  "name": "united-states-marijuana-revenue-tax-tracker",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "license": "MIT",
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
@@ -11,6 +11,16 @@
     "export": "react-static export",
     "serve": "serve dist -p 3000"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefelewis/united-states-marijuana-revenue-tax-tracker.git"
+  },
+  "author": "Jeff Lewis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jefelewis/united-states-marijuana-revenue-tax-tracker/issues"
+  },
+  "homepage": "https://github.com/jefelewis/united-states-marijuana-revenue-tax-tracker#readme",
   "dependencies": {
     "axios": "^0.16.2",
     "react": "^16.0.0",
