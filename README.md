@@ -6,6 +6,14 @@
 
 ## About The Data
 The data comes directly from each State. Below is a list of available states and data sources.
+
+| State         | Medical Legalized | Recreational Legalized |
+| ------------- |-------------------| -----------------------|
+| Alaska (AK)   | right-aligned     | |
+| Arizona (AZ)  | centered          |   $12 |
+| Arkansas (AR) | are neat          |    $1 |
+
+
 * [Alaska (AK)]()
 * [Arizona (AZ)]()
 * [Arkansas (AR)]()
