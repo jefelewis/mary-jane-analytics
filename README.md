@@ -32,7 +32,7 @@ The data comes directly from each State. Below is a list of available states and
 | New Mexico (NM)    | 00/00/0000        | 00/00/0000             | [Source]()
 | Oklahoma (OK)      | 00/00/0000        | 00/00/0000             | [Source]()
 | Oregon (OR)        | 00/00/0000        | 00/00/0000             | [Source]()
-| Washington(WA)     | 00/00/0000        | 00/00/0000             | [Source]()
+| Washington (WA)    | 00/00/0000        | 00/00/0000             | [Source]()
 | Vermont (VT)       | 00/00/0000        | 00/00/0000             | [Source]()
 
 ## Getting Started
