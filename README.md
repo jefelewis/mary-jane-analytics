@@ -50,4 +50,3 @@ react-static start
 ```
 react-static build
 ```
-
