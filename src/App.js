@@ -7,7 +7,7 @@ import { hot } from 'react-hot-loader'
 import './app.css'
 
 // Imports: Components
-import MarijuanaChart from './components/MarijuanaChart'
+import ColoradoFinancialData from './components/ColoradoFinancialData'
 import RecreationalStates from './components/RecreationalStates'
 import MedicinalStates from './components/MedicinalStates'
 
@@ -20,7 +20,7 @@ const App = () => (
       </nav>
 
       <div className="content">
-        <MarijuanaChart />
+        <ColoradoFinancialData />
         <RecreationalStates />
         <MedicinalStates />
       </div>
