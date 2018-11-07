@@ -1,5 +1,5 @@
 {
-  "number": 32,
+  "number": 33,
   "states": [
     "AK",
     "AR",
@@ -17,6 +17,7 @@
     "ME",
     "MI",
     "MN",
+    "MO",
     "MT",
     "ND",
     "NH",
@@ -29,6 +30,7 @@
     "OR",
     "PA",
     "RI",
+    "UT",
     "VT",
     "WA",
     "WV"
