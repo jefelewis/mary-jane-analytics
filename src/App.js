@@ -10,6 +10,7 @@ import './app.css'
 import ColoradoSalesData from './components/ColoradoSalesData'
 import RecreationalStates from './components/RecreationalStates'
 import MedicinalStates from './components/MedicinalStates'
+import ColoradoTaxData from './components/ColoradoTaxData'
 
 // React Application
 const App = () => (
@@ -21,6 +22,7 @@ const App = () => (
 
       <div className="content">
         <ColoradoSalesData />
+        <ColoradoTaxData />
         <RecreationalStates />
         <MedicinalStates />
       </div>
