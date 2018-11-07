@@ -30,9 +30,11 @@ class RecreationalStates extends Component {
     return (
       <div>
         <h1>States With Recreational Marijuana</h1>
-        <h2>{states.length} / 50 States</h2>
+        <h2>{states.length}/50 States</h2>
         <h2>{(states.length/50)*100}% of America</h2>
-        {states.map(state => <p>{state}</p>)}
+        <ol>
+          {states.map(state => <li key={state.name}>{state}</li>)}
+        </ol>
 
       </div>
     )
