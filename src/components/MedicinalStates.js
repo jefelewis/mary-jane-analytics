@@ -34,7 +34,7 @@ const states = [
   'Rhode Island (RI)',
   'Utah (UT)',
   'Vermont (VT)',
-  '(WA)',
+  'Washington (WA)',
   'West Virginia (WV)',
 ]
 
