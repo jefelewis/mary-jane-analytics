@@ -3,7 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "keywords": ["united states", "marijuana", "weed", "revenue", "tax", "income", "sales", "million", "billion"],
+  "keywords": [
+    "united states",
+    "marijuana",
+    "weed",
+    "revenue",
+    "tax",
+    "income",
+    "sales",
+    "million",
+    "billion"
+  ],
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
@@ -25,6 +35,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "chart.js": "^2.7.3",
+    "opn": "^5.4.0",
     "react": "^16.6.1",
     "react-chartjs-2": "^2.7.4",
     "react-dom": "^16.6.1",
