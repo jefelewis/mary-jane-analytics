@@ -16,7 +16,7 @@ const App = () => (
   <Router>
     <div>
       <nav>
-        <h1>Amerijauna</h1>
+        <h1>Marijuana Facts</h1>
       </nav>
 
       <div className="content">
