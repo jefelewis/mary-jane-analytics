@@ -1,15 +1,14 @@
 // Imports: Dependencies
 import React from 'react'
-import axios from 'axios'
 import { Line } from 'react-chartjs-2'
 
 // ChartJS: Colorado Tax Data
 const coloradoTaxdata = {
-  labels: [2014, 2015, 2016, 2017],
+  labels: [2013, 2014, 2015, 2016, 2017],
   datasets: [
     {
       label: 'Alaska',
-      data: [null, null, null, null, null],
+      data: [null, null, null, null, null, null],
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -29,8 +28,8 @@ const coloradoTaxdata = {
       pointHitRadius: 10,
     },
     {
-      label: 'California',
-      data: [null, null, null, null, null],
+      label: 'California (Recreational Legalized in 2018)',
+      data: [null, null, null, null, null, null],
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -50,8 +49,8 @@ const coloradoTaxdata = {
       pointHitRadius: 10,
     },
     {
-      label: 'Colorado',
-      data: [67594323, 130411173, 193604810, 247368473, 200710655],
+      label: 'Colorado (Recreational Legalized in 2014)',
+      data: [null, 67594323, 130411173, 193604810, 247368473, 200710655, null],
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -71,8 +70,8 @@ const coloradoTaxdata = {
       pointHitRadius: 10,
     },
     {
-      label: 'Massachusetts',
-      data: [null, null, null, null, null],
+      label: 'Massachusetts (Recreational Legalized in 2018)',
+      data: [null, null, null, null, null, null],
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -92,8 +91,8 @@ const coloradoTaxdata = {
       pointHitRadius: 10,
     },
     {
-      label: 'Maine',
-      data: [null, null, null, null, null],
+      label: 'Maine (Recreational Legalized in 2018)',
+      data: [null, null, null, null, null, null],
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -113,8 +112,8 @@ const coloradoTaxdata = {
       pointHitRadius: 10,
     },
     {
-      label: 'Michigan',
-      data: [null, null, null, null, null],
+      label: 'Michigan (Recreational Legalized in 2018)',
+      data: [null, null, null, null, null, null],
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -134,8 +133,8 @@ const coloradoTaxdata = {
       pointHitRadius: 10,
     },
     {
-      label: 'Nevada',
-      data: [null, null, null, null, null],
+      label: 'Nevada (Recreational Legalized in 2016)',
+      data: [null, null, null, null, null, null],
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -155,8 +154,8 @@ const coloradoTaxdata = {
       pointHitRadius: 10,
     },
     {
-      label: 'Oregon',
-      data: [null, null, null, null, null],
+      label: 'Oregon (Recreational Legalized in 2016?)',
+      data: [null, null, null, null, null, null],
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -176,8 +175,8 @@ const coloradoTaxdata = {
       pointHitRadius: 10,
     },
     {
-      label: 'Vermont',
-      data: [null, null, null, null, null],
+      label: 'Vermont (Recreational Legalized in 2018)',
+      data: [null, null, null, null, null, null],
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -197,8 +196,8 @@ const coloradoTaxdata = {
       pointHitRadius: 10,
     },
     {
-      label: 'Washington',
-      data: [null, null, null, null, null],
+      label: 'Washington (Recreational Legalized in 2012)',
+      data: [null, null, null, null, null, null],
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -223,7 +222,7 @@ const coloradoTaxdata = {
 // React Component: Colorado Tax Data
 const ColoradoTaxData = () => (
   <div>
-    <h1>Marijuana Tax</h1>
+    <h1>Marijuana Tax Revenue, Licenses, & Fees Collected (Medicinal & Recreational)</h1>
     <Line
       data={coloradoTaxdata}
       options={{
