@@ -9,6 +9,7 @@ import './app.css'
 // Imports: Components
 import MarijuanaChart from './components/MarijuanaChart'
 import RecreationalStates from './components/RecreationalStates'
+import MedicinalStates from './components/MedicinalStates'
 
 // React Application
 const App = () => (
@@ -23,6 +24,7 @@ const App = () => (
       <div className="content">
         <MarijuanaChart />
         <RecreationalStates />
+        <MedicinalStates />
       </div>
 
     </div>
