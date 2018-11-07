@@ -1,112 +1,62 @@
 // Imports: Dependencies
 import React from 'react'
 import axios from 'axios'
-import { Bar } from 'react-chartjs-2'
+import { Line } from 'react-chartjs-2'
 
-// // Import Data
-// const coloradoData = '../data/colorado.json'
-
-// Data
-const deleteData = {
-  "colorado": {
-    "sales": [
-      {
-        "year": 2014,
-        "amount": 683523739
-      },
-      {
-        "year": 2015,
-        "amount": 995591255
-      },
-      {
-        "year": 2016,
-        "amount": 1307203473
-      },
-      {
-        "year": 2017,
-        "amount": 1507702219
-      },
-      {
-        "year": 2018,
-        "amount": null
-      },
-      {
-        "year": 2019,
-        "amount": null
-      },
-      {
-        "year": 2020,
-        "amount": null
-      }
-    ],
-    "taxes": [
-      {
-        "year": 2014,
-        "amount": 67594323
-      },
-      {
-        "year": 2015,
-        "amount": 130411173
-      },
-      {
-        "year": 2016,
-        "amount": 193604810
-      },
-      {
-        "year": 2017,
-        "amount": 247368473
-      },
-      {
-        "year": 2018,
-        "amount": null
-      },
-      {
-        "year": 2019,
-        "amount": null
-      },
-      {
-        "year": 2020,
-        "amount": null
-      }
-    ]
-  }
-}
-
-
-
-
-
-
-// Years
-let years = []
-let taxRevenue = []
-
+// ChartJS: Colorado Sales Data
 const coloradoSalesdata = {
-  labels: deleteData.colorado.sales.map(year => {
-    return years.push(year.year)
-  }),
-  datasets: [{
-    label: 'Marijuana Sales Data',
-    backgroundColor: 'rgb(255, 99, 132)',
-    borderColor: 'rgb(255, 99, 132)',
-    data: deleteData.colorado.taxes.map(tax => {
-      return taxRevenue.push(tax.amount)
-    }),
-  }],
+  labels: [2014, 2015, 2016, 2017],
+  datasets: [
+    {
+      label: 'Colorado Marijuana Sales Data',
+      data: [683523739, 995591255, 1307203473, 1507702219],
+      fill: false,
+      lineTension: 0.1,
+      backgroundColor: 'rgba(75,192,192,0.4)',
+      borderColor: 'rgba(75,192,192,1)',
+      borderCapStyle: 'butt',
+      borderDash: [],
+      borderDashOffset: 0.0,
+      borderJoinStyle: 'miter',
+      pointBorderColor: 'rgba(75,192,192,1)',
+      pointBackgroundColor: '#fff',
+      pointBorderWidth: 1,
+      pointHoverRadius: 5,
+      pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+      pointHoverBorderColor: 'rgba(220,220,220,1)',
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
+    },
+  ],
 }
 
-const MarijuanaChart = () => (
+// React Component: Colorado Financial Data
+const ColoradoFinancialData = () => (
   <div>
-    <h1>FUCK</h1>
-    <Bar
+    <h1>Marijuana Sales</h1>
+    <Line
       data={coloradoSalesdata}
-      width={100}
-      height={50}
       options={{
         maintainAspectRatio: false,
+        scaleBeginAtZero: true,
+        scales: {
+          yAxes: [{
+              ticks: {
+                  // Include a dollar sign in the ticks
+                  callback(value, index, values) {
+                      return '$' + value;
+                  },
+              },
+          }],
+        },
       }}
     />
+
+    <h1>Sales</h1>
+    <h2>Total: </h2>
   </div>
 )
 
-export default MarijuanaChart
+// Exports
+export default ColoradoFinancialData
