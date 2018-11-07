@@ -1,0 +1,64 @@
+{
+  "colorado": {
+    "sales": [
+      {
+        "year": 2014,
+        "amount": 683523739
+      },
+      {
+        "year": 2015,
+        "amount": 995591255
+      },
+      {
+        "year": 2016,
+        "amount": 1307203473
+      },
+      {
+        "year": 2017,
+        "amount": 1507702219
+      },
+      {
+        "year": 2018,
+        "amount": null
+      },
+      {
+        "year": 2019,
+        "amount": null
+      },
+      {
+        "year": 2020,
+        "amount": null
+      }
+    ],
+    "taxes-licenses-fees": [
+      {
+        "year": 2014,
+        "amount": 67594323
+      },
+      {
+        "year": 2015,
+        "amount": 130411173
+      },
+      {
+        "year": 2016,
+        "amount": 193604810
+      },
+      {
+        "year": 2017,
+        "amount": 247368473
+      },
+      {
+        "year": 2018,
+        "amount": null
+      },
+      {
+        "year": 2019,
+        "amount": null
+      },
+      {
+        "year": 2020,
+        "amount": null
+      }
+    ]
+  }
+}
