@@ -11,6 +11,7 @@ import ColoradoSalesData from './components/ColoradoSalesData'
 import RecreationalStates from './components/RecreationalStates'
 import MedicinalStates from './components/MedicinalStates'
 import ColoradoTaxData from './components/ColoradoTaxData'
+import MonthlyTaxData from './components/MonthlyTaxData'
 
 // React Application
 const App = () => (
@@ -21,10 +22,11 @@ const App = () => (
       </nav>
 
       <div className="content">
-        <ColoradoSalesData />
+        {/* <ColoradoSalesData />
         <ColoradoTaxData />
         <RecreationalStates />
-        <MedicinalStates />
+        <MedicinalStates /> */}
+        <MonthlyTaxData />
       </div>
 
     </div>
