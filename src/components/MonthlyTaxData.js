@@ -208,10 +208,10 @@ const monthlyTaxdata = {
       label: 'Oregon',
       data: [
         null, null, null, null, null, null, null, null, null, null, null, null,
-        null, null, null, null, null, null, null, null, null, null, null, 2484170, 4358754,
-        3735111, 4339440, 5735508, 5533949, 7345281, 6679585, 7831157, 6463877, 5647600, 5261096, 5191764, 5181959,
-        5169803, 6637787, 7277322, 5944069, 7827988, 7445026, 7221129, 8110286, 7176690, 9283580, 7708791, 7839406,
-        8868932, 9001343, 8560616, 10099649, 10114594, 8054422,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, 2484170, 4358754, 3735111, 4339440, 5735508, 5533949, 7345281, 6679585, 7831157, 6463877, 5647600,
+        5261096, 5191764, 5181959, 5169803, 6637787, 7277322, 5944069, 7827988, 7445026, 7221129, 8110286, 7176690,
+        9283580, 7708791, 7839406, 8868932, 9001343, 8560616, 10099649, 10114594, 8054422,
       ],
       fill: false,
       lineTension: 0.1,
@@ -434,7 +434,7 @@ class MonthlyTaxData extends Component {
         <br></br>
         <h2>Oregon Marijuana Tax Revenue Since February 2016: ${this.getCompleteTotal("Oregon")}</h2>
         <br></br>
-        <h2>Vermont Marijuana Tax Revenue Since February 2016: ${this.getCompleteTotal("Vermont")}</h2>
+        <h2>Vermont Marijuana Tax Revenue Since July 2017: ${this.getCompleteTotal("Vermont")}</h2>
         <br></br>
         <h2>Washington Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("Washington")}</h2>
         <br></br>
