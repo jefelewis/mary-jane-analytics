@@ -7,7 +7,7 @@ const coloradoTaxdata = {
   labels: [2013, 2014, 2015, 2016, 2017],
   datasets: [
     {
-      label: 'Alaska',
+      label: 'Alaska (Recreational Legalized in 2015)',
       data: [null, null, null, null, null, null],
       fill: false,
       lineTension: 0.1,
