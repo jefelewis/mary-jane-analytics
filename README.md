@@ -20,7 +20,7 @@ The data comes directly from each State. Below is a list of available states and
 | Maine (ME)         | 00/00/0000        | 00/00/0000             | [Source]()
 | Massachusetts (MA) | 00/00/0000        | 00/00/0000             | [Source]()
 | Montana (MT)       | 00/00/0000        | 00/00/0000             | [Source]()
-| Nevada (NV)        | 00/00/0000        | 00/00/0000             | [Source]()
+| Nevada (NV)        | 00/00/0000        | 00/00/0000             | [Source](https://tax.nv.gov/Publications/Marijuana_Statistics_and_Reports/)
 | New Mexico (NM)    | 00/00/0000        | 00/00/0000             | [Source]()
 | Oklahoma (OK)      | 00/00/0000        | 00/00/0000             | [Source]()
 | Oregon (OR)        | 00/00/0000        | 00/00/0000             | [Source]()
