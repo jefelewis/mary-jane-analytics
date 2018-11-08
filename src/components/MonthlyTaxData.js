@@ -20,6 +20,7 @@ const monthlyTaxdata = {
         null, null, null, null, null, null, null, null, null, null, null, null,
         null, null, null, null, null, null, null, null, null, null, null, null,
         null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null
       ],
       fill: false,
       lineTension: 0.1,
@@ -120,7 +121,34 @@ const monthlyTaxdata = {
       pointRadius: 1,
       pointHitRadius: 10,
     },
+    {
+      label: 'Washington',
+      data: [
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        30461557, 29881928, 29488279, 28604213, 25221393, 23768411, 24981165, 25065468, 19924858, 19172081, 26231936, 27057699,
+        27450468, 30783447, 28293068, 24861252, 25619172, 27685416,
+      ],
+      fill: false,
+      lineTension: 0.1,
+      backgroundColor: '#7e1946',
+      borderColor: '#aac0aa',
+      borderCapStyle: 'butt',
+      borderDash: [],
+      borderDashOffset: 0.0,
+      borderJoinStyle: 'miter',
+      pointBorderColor: '#000',
+      pointBackgroundColor: '#000',
+      pointBorderWidth: 5,
+      pointHoverRadius: 10,
+      pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+      pointHoverBorderColor: 'rgba(220,220,220,1)',
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
+    },
   ],
+  
 }
 
 // Helper Functions
@@ -157,8 +185,8 @@ class MonthlyTaxData extends Component {
         <h1>Monthly Medicinal & Recreational Marijuana Tax Revenue</h1>
         <Line
           data={monthlyTaxdata}
-          height={50}
-          width={100}
+          height={25}
+          width={25}
           options={{
             maintainAspectRatio: false,
             scaleBeginAtZero: true,
@@ -180,7 +208,7 @@ class MonthlyTaxData extends Component {
                     },
                     min: 0,
                     beginAtZero: true,
-                    stepSize: 1000000,
+                    stepSize: 5000000,
                   },
               }],
             },
@@ -190,6 +218,7 @@ class MonthlyTaxData extends Component {
         <h1>Colorado Marijuana Tax Revenue Since February 2014: ${this.state.completeTotal}</h1>
         <h1>Nevada Marijuana Tax Revenue Since January 2017: ${this.state.completeTotal}</h1>
         <h1>Oregon Marijuana Tax Revenue Since February 2016: ${this.state.completeTotal}</h1>
+        <h1>Washington Marijuana Tax Revenue Since February 2014: ${this.state.completeTotal}</h1>
 
         <h1>States Average $ Million In Tax Revenue Per Month</h1>
       </div>
