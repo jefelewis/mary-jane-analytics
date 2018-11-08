@@ -347,6 +347,32 @@ class MonthlyTaxData extends Component {
     return this.addCommasToNumber(total)
   }
 
+  getStateTaxRevenueRanked(array) {
+    let Alaska = monthlyTaxdata.datasets[0].data
+    let California = monthlyTaxdata.datasets[1].data
+    let Colorado = monthlyTaxdata.datasets[2].data
+    let Maine = monthlyTaxdata.datasets[3].data
+    let Michigan = monthlyTaxdata.datasets[4].data
+    let Massachusetts = monthlyTaxdata.datasets[5].data
+    let Nevada = monthlyTaxdata.datasets[6].data
+    let Oregon = monthlyTaxdata.datasets[7].data
+    let Vermont = monthlyTaxdata.datasets[8].data
+    let Washington = monthlyTaxdata.datasets[9].data 
+
+    //
+    let states = [];
+
+    for (let i = 0; i <= 9; i++) {
+      let taxRevenue = monthlyTaxdata.datasets[i]
+    }
+
+    // Sort States?
+
+    return (
+      <li>{monthlyTaxdata.datasets[i].label}: </li>
+    )
+  }
+
   render () {
     return (
       <div>
@@ -380,27 +406,37 @@ class MonthlyTaxData extends Component {
             },
           }}
         />
-        <h1>Alaska Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("Alaska")}</h1>
+        <h1>States Collecting The Most Marijuana Tax Revenue:</h1>
+        <ol>
+          <h2><li>Washington (Since February 2014): ${this.getCompleteTotal("Washington")}</li></h2>
+          <h2><li>Colorado (Since February 2014): ${this.getCompleteTotal("Colorado")}</li></h2>
+          <h2><li>Oregon (Since February 2016): ${this.getCompleteTotal("Oregon")}</li></h2>
+          <h2><li>Nevada (Since January 2017): ${this.getCompleteTotal("Nevada")}</li></h2>
+        </ol>
+
+
+
+        {/* <h2>Alaska Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("Alaska")}</h2>
         <br></br>
-        <h1>California Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("California")}</h1>
+        <h2>California Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("California")}</h2>
         <br></br>
-        <h1>Colorado Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("Colorado")}</h1>
+        <h2>Colorado Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("Colorado")}</h2>
         <br></br>
-        <h1>Maine Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Maine")}</h1>
+        <h2>Maine Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Maine")}</h2>
         <br></br>
-        <h1>Michigan Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Michigan")}</h1>
+        <h2>Michigan Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Michigan")}</h2>
         <br></br>
-        <h1>Massachusetts Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Massachusetts")}</h1>
+        <h2>Massachusetts Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Massachusetts")}</h2>
         <br></br>
-        <h1>Nevada Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Nevada")}</h1>
+        <h2>Nevada Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Nevada")}</h2>
         <br></br>
-        <h1>Oregon Marijuana Tax Revenue Since February 2016: ${this.getCompleteTotal("Oregon")}</h1>
+        <h2>Oregon Marijuana Tax Revenue Since February 2016: ${this.getCompleteTotal("Oregon")}</h2>
         <br></br>
-        <h1>Vermont Marijuana Tax Revenue Since February 2016: ${this.getCompleteTotal("Vermont")}</h1>
+        <h2>Vermont Marijuana Tax Revenue Since February 2016: ${this.getCompleteTotal("Vermont")}</h2>
         <br></br>
-        <h1>Washington Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("Washington")}</h1>
+        <h2>Washington Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("Washington")}</h2>
         <br></br>
-        <h1>States Average $ Million In Tax Revenue Per Month</h1>
+        <h1>States Average $ Million In Tax Revenue Per Month</h1> */}
       </div>
     )
   }
