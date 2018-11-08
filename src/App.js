@@ -17,9 +17,9 @@ import MonthlyTaxData from './components/MonthlyTaxData'
 const App = () => (
   <Router>
     <div>
-      <nav>
+      {/* <nav>
         <h1>Marijuana Facts</h1>
-      </nav>
+      </nav> */}
 
       <div className="content">
         {/* <ColoradoSalesData />
