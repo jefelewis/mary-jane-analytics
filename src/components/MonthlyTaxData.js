@@ -165,11 +165,15 @@ class MonthlyTaxData extends Component {
     this.state = {
       initalMonth: monthlyTaxdata.labels[0],
       completeTotal: null,
+      washingtonTotal: null,
     }
   }
 
-  // componentDidMount() {
+  // getCompleteTotal() {
   //   let total = 0;
+
+  //   if ()
+
 
   //   for (let i = 0; i < monthlyTaxdata.datasets[0].data.length; i++) {
   //     total += monthlyTaxdata.datasets[0].data[i]
@@ -186,10 +190,8 @@ class MonthlyTaxData extends Component {
         <h1>Monthly Medicinal & Recreational Marijuana Tax Revenue</h1>
         <Line
           data={monthlyTaxdata}
-          height={25}
-          width={25}
           options={{
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
             scaleBeginAtZero: true,
             responsive: true,
             scales: {
