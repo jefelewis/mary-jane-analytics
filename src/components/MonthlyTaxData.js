@@ -5,11 +5,11 @@ import { Line } from 'react-chartjs-2'
 // ChartJS: Colorado Tax Data
 const monthlyTaxdata = {
   labels: [
-    'January (2014)', 'February (2014)', 'March (2014)', 'April (2014)', 'June (2014)', 'July (2014)', 'August (2014)', 'September (2014)', 'October (2014)', 'November (2014)', 'December (2014)',
-    'January (2015)', 'February (2015)', 'March (2015)', 'April (2015)', 'June (2015)', 'July (2015)', 'August (2015)', 'September (2015)', 'October (2015)', 'November (2015)', 'December (2015)',
-    'January (2016)', 'February (2016)', 'March (2016)', 'April (2016)', 'June (2016)', 'July (2016)', 'August (2016)', 'September (2016)', 'October (2016)', 'November (2016)', 'December (2016)',
-    'January (2017)', 'February (2017)', 'March (2017)', 'April (2017)', 'June (2017)', 'July (2017)', 'August (2017)', 'September (2017)', 'October (2017)', 'November (2017)', 'December (2017)',
-    'January (2018)', 'February (2018)', 'March (2018)', 'April (2018)', 'June (2018)', 'July (2018)', 'August (2018)', 'September (2018)', 'October (2018)', 'November (2018)', 'December (2018)',
+    'January (2014)', 'February (2014)', 'March (2014)', 'April (2014)', 'May (2014)', 'June (2014)', 'July (2014)', 'August (2014)', 'September (2014)', 'October (2014)', 'November (2014)', 'December (2014)',
+    'January (2015)', 'February (2015)', 'March (2015)', 'April (2015)', 'May (2015)', 'June (2015)', 'July (2015)', 'August (2015)', 'September (2015)', 'October (2015)', 'November (2015)', 'December (2015)',
+    'January (2016)', 'February (2016)', 'March (2016)', 'April (2016)', 'May (2016)', 'June (2016)', 'July (2016)', 'August (2016)', 'September (2016)', 'October (2016)', 'November (2016)', 'December (2016)',
+    'January (2017)', 'February (2017)', 'March (2017)', 'April (2017)', 'May (2017)', 'June (2017)', 'July (2017)', 'August (2017)', 'September (2017)', 'October (2017)', 'November (2017)', 'December (2017)',
+    'January (2018)', 'February (2018)', 'March (2018)', 'April (2018)', 'May (2018)', 'June (2018)', 'July (2018)', 'August (2018)', 'September (2018)', 'October (2018)', 'November (2018)', 'December (2018)',
   ],
   datasets: [
     {
@@ -17,8 +17,9 @@ const monthlyTaxdata = {
       data: [
         null, null, null, null, null, null, null, null, null, null, null, null,
         null, null, null, null, null, null, null, null, null, null, null, null,
-        null, null, null, null, null, null, null, null, null, null, null, null,
-        null, null, null, null, null, null, null, null
+        null, null, null, null, null, null, null, null, null, 10400, 81100, 145800,
+        107500, 128000, 220200, 272000, 272600, 512500, 577901, 694364, 723757, 953591, 872197, 784176,
+        1040512, 897082, 1089580, 1063847, 1180349, 1257513, 1369022, 1540427, 1481523
       ],
       fill: false,
       lineTension: 0.1,
@@ -186,18 +187,18 @@ const monthlyTaxdata = {
       ],
       fill: false,
       lineTension: 0.1,
-      backgroundColor: '#133337',
-      borderColor: '#133337',
+      backgroundColor: '#0080ff',
+      borderColor: '#0080ff',
       borderCapStyle: 'butt',
       borderDash: [],
       borderDashOffset: 0.0,
       borderJoinStyle: 'miter',
-      pointBorderColor: '133337',
-      pointBackgroundColor: '#133337',
+      pointBorderColor: '0080ff',
+      pointBackgroundColor: '#0080ff',
       pointBorderWidth: 5,
       pointHoverRadius: 8,
-      pointHoverBackgroundColor: '#133337',
-      pointHoverBorderColor: '#133337',
+      pointHoverBackgroundColor: '#0080ff',
+      pointHoverBorderColor: '#0080ff',
       pointHoverBorderWidth: 2,
       pointRadius: 2,
       // Distance Of Hover Zone
@@ -412,6 +413,7 @@ class MonthlyTaxData extends Component {
           <h2><li>Colorado (Since February 2014): ${this.getCompleteTotal("Colorado")}</li></h2>
           <h2><li>Oregon (Since February 2016): ${this.getCompleteTotal("Oregon")}</li></h2>
           <h2><li>Nevada (Since January 2017): ${this.getCompleteTotal("Nevada")}</li></h2>
+          <h2><li>Alaska (Since October 2016): ${this.getCompleteTotal("Alaska")}</li></h2>
         </ol>
 
 
