@@ -14,7 +14,34 @@ const monthlyTaxdata = {
     'January (2018)', 'February (2018)', 'March (2018)', 'April (2018)', 'June (2018)', 'July (2018)', 'August (2018)', 'September (2018)', 'October (2018)', 'November (2018)', 'December (2018)'
 
   ],
-  datasets: [    {
+  datasets: [
+    {
+      label: 'Alaska',
+      data: [
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null
+      ],
+      fill: false,
+      lineTension: 0.1,
+      backgroundColor: '#4a8e39',
+      borderColor: '#4a8e39',
+      borderCapStyle: 'butt',
+      borderDash: [],
+      borderDashOffset: 0.0,
+      borderJoinStyle: 'miter',
+      pointBorderColor: '000',
+      pointBackgroundColor: '#000',
+      pointBorderWidth: 5,
+      pointHoverRadius: 10,
+      pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+      pointHoverBorderColor: 'rgba(220,220,220,1)',
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
+    },
+    {
       label: 'California',
       data: [
         null, null, null, null, null, null, null, null, null, null, null, null,
@@ -48,6 +75,84 @@ const monthlyTaxdata = {
         13247434, 12466617, 14195923, 13097298, 17183162, 14482648, 16823849, 17574149, 19145992, 19266922, 18425864, 17694953,
         18164787, 17723858, 17550692, 22867587, 18563939, 19662464, 20437751, 23775043, 23235507, 23098408, 21076993, 21211445,
         21681438, 21134864, 20871820, 22947141, 22367707, 21928692, 22963778, 23044818, 2377039
+      ],
+      fill: false,
+      lineTension: 0.1,
+      backgroundColor: '#4a8e39',
+      borderColor: '#4a8e39',
+      borderCapStyle: 'butt',
+      borderDash: [],
+      borderDashOffset: 0.0,
+      borderJoinStyle: 'miter',
+      pointBorderColor: '000',
+      pointBackgroundColor: '#000',
+      pointBorderWidth: 5,
+      pointHoverRadius: 10,
+      pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+      pointHoverBorderColor: 'rgba(220,220,220,1)',
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
+    },
+    {
+      label: 'Maine',
+      data: [
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null
+      ],
+      fill: false,
+      lineTension: 0.1,
+      backgroundColor: '#4a8e39',
+      borderColor: '#4a8e39',
+      borderCapStyle: 'butt',
+      borderDash: [],
+      borderDashOffset: 0.0,
+      borderJoinStyle: 'miter',
+      pointBorderColor: '000',
+      pointBackgroundColor: '#000',
+      pointBorderWidth: 5,
+      pointHoverRadius: 10,
+      pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+      pointHoverBorderColor: 'rgba(220,220,220,1)',
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
+    },
+    {
+      label: 'Massachusetts',
+      data: [
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null
+      ],
+      fill: false,
+      lineTension: 0.1,
+      backgroundColor: '#4a8e39',
+      borderColor: '#4a8e39',
+      borderCapStyle: 'butt',
+      borderDash: [],
+      borderDashOffset: 0.0,
+      borderJoinStyle: 'miter',
+      pointBorderColor: '000',
+      pointBackgroundColor: '#000',
+      pointBorderWidth: 5,
+      pointHoverRadius: 10,
+      pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+      pointHoverBorderColor: 'rgba(220,220,220,1)',
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
+    },
+    {
+      label: 'Michigan',
+      data: [
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null
       ],
       fill: false,
       lineTension: 0.1,
@@ -122,6 +227,32 @@ const monthlyTaxdata = {
       pointHitRadius: 10,
     },
     {
+      label: 'Vermont',
+      data: [
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null
+      ],
+      fill: false,
+      lineTension: 0.1,
+      backgroundColor: '#4a8e39',
+      borderColor: '#4a8e39',
+      borderCapStyle: 'butt',
+      borderDash: [],
+      borderDashOffset: 0.0,
+      borderJoinStyle: 'miter',
+      pointBorderColor: '000',
+      pointBackgroundColor: '#000',
+      pointBorderWidth: 5,
+      pointHoverRadius: 10,
+      pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+      pointHoverBorderColor: 'rgba(220,220,220,1)',
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
+    },
+    {
       label: 'Washington',
       data: [
         null, null, null, null, null, 1565, 937273, 1815427, 3250921, 4022719, 4238002, 4613530,
@@ -152,11 +283,6 @@ const monthlyTaxdata = {
   
 }
 
-// Helper Functions
-const numberWithCommas = (x) => {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
-
 // React Component: Monthly Tax Data
 class MonthlyTaxData extends Component {
   constructor () {
@@ -169,20 +295,50 @@ class MonthlyTaxData extends Component {
     }
   }
 
-  // getCompleteTotal() {
-  //   let total = 0;
+  addCommasToNumber(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
 
-  //   if ()
+  getCompleteTotal(state) {
+    let total = 0;
+    let taxRevenue = null;
 
+    if (state === "Alaska") {
+      taxRevenue = monthlyTaxdata.datasets[0].data
+    }
+    if (state === "California") {
+      taxRevenue = monthlyTaxdata.datasets[1].data
+    }
+    if (state === "Colorado") {
+      taxRevenue = monthlyTaxdata.datasets[2].data
+    }
+    if (state === "Maine") {
+      taxRevenue = monthlyTaxdata.datasets[3].data
+    }
+    if (state === "Massachusetts") {
+      taxRevenue = monthlyTaxdata.datasets[4].data
+    }
+    if (state === "Michigan") {
+      taxRevenue = monthlyTaxdata.datasets[5].data
+    }
+    if (state === "Nevada") {
+      taxRevenue = monthlyTaxdata.datasets[6].data
+    }
+    if (state === "Oregon") {
+      taxRevenue = monthlyTaxdata.datasets[7].data
+    }
+    if (state === "Vermont") {
+      taxRevenue = monthlyTaxdata.datasets[8].data
+    }
+    if (state === "Washington") {
+      taxRevenue = monthlyTaxdata.datasets[9].data
+    }
 
-  //   for (let i = 0; i < monthlyTaxdata.datasets[0].data.length; i++) {
-  //     total += monthlyTaxdata.datasets[0].data[i]
-  //   }
-
-  //   this.setState({
-  //     completeTotal: numberWithCommas(total)
-  //   })
-  // }
+    for (let i = 0; i < taxRevenue.length; i++) {
+      total += taxRevenue[i]
+    }
+    return this.addCommasToNumber(total)
+  }
 
   render () {
     return (
@@ -217,12 +373,26 @@ class MonthlyTaxData extends Component {
             },
           }}
         />
-        <h1>California Marijuana Tax Revenue Since February 2014: ${this.state.completeTotal}</h1>
-        <h1>Colorado Marijuana Tax Revenue Since February 2014: ${this.state.completeTotal}</h1>
-        <h1>Nevada Marijuana Tax Revenue Since January 2017: ${this.state.completeTotal}</h1>
-        <h1>Oregon Marijuana Tax Revenue Since February 2016: ${this.state.completeTotal}</h1>
-        <h1>Washington Marijuana Tax Revenue Since February 2014: ${this.state.completeTotal}</h1>
-
+        <h1>Alaska Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("Alaska")}</h1>
+        <br></br>
+        <h1>California Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("California")}</h1>
+        <br></br>
+        <h1>Colorado Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("Colorado")}</h1>
+        <br></br>
+        <h1>Maine Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Maine")}</h1>
+        <br></br>
+        <h1>Michigan Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Michigan")}</h1>
+        <br></br>
+        <h1>Massachusetts Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Massachusetts")}</h1>
+        <br></br>
+        <h1>Nevada Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Nevada")}</h1>
+        <br></br>
+        <h1>Oregon Marijuana Tax Revenue Since February 2016: ${this.getCompleteTotal("Oregon")}</h1>
+        <br></br>
+        <h1>Vermont Marijuana Tax Revenue Since February 2016: ${this.getCompleteTotal("Oregon")}</h1>
+        <br></br>
+        <h1>Washington Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("Washington")}</h1>
+        <br></br>
         <h1>States Average $ Million In Tax Revenue Per Month</h1>
       </div>
     )
