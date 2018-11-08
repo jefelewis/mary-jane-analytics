@@ -23,8 +23,8 @@ The data comes directly from each State. Below is a list of available states and
 | Nevada (NV)        | 00/00/0000        | 00/00/0000             | [Source](https://tax.nv.gov/Publications/Marijuana_Statistics_and_Reports/)
 | New Mexico (NM)    | 00/00/0000        | 00/00/0000             | [Source]()
 | Oklahoma (OK)      | 00/00/0000        | 00/00/0000             | [Source]()
-| Oregon (OR)        | 00/00/0000        | 00/00/0000             | [Source]()
-| Washington (WA)    | 00/00/0000        | 00/00/0000             | [Source]()
+| Oregon (OR)        | 00/00/0000        | 00/00/0000             | [Source](https://www.oregon.gov/DOR/programs/gov-research/Pages/research-marijuana.aspx)
+| Washington (WA)    | 00/00/0000        | 00/00/0000             | [Source](https://lcb.wa.gov/about/annual-report)
 | Vermont (VT)       | 00/00/0000        | 00/00/0000             | [Source]()
 
 ## Built With
