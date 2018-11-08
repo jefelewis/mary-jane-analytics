@@ -43,6 +43,33 @@ const monthlyTaxdata = {
       pointHitRadius: 10,
     },
     {
+      label: 'Nevada (Recreational Legalized: 2014?)',
+      data: [
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, 3682773, 4861641, 4720284, 5839336, 5506067, 5766694, 5553590,
+        5946346, 7095894, 6550222, 7112453, 7124485, 7908428
+      ],
+      fill: false,
+      lineTension: 0.1,
+      backgroundColor: 'rgba(75,192,192,0.4)',
+      borderColor: 'rgba(75,192,192,1)',
+      borderCapStyle: 'butt',
+      borderDash: [],
+      borderDashOffset: 0.0,
+      borderJoinStyle: 'miter',
+      pointBorderColor: 'rgba(75,192,192,1)',
+      pointBackgroundColor: '#fff',
+      pointBorderWidth: 1,
+      pointHoverRadius: 10,
+      pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+      pointHoverBorderColor: 'rgba(220,220,220,1)',
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
+    },
+    {
       label: 'Oregon (Recreational Legalized: 2014?)',
       data: [
         null, null, null, null, null, null, null, null, null, null, null, null,
@@ -103,11 +130,11 @@ class MonthlyTaxData extends Component {
   render () {
     return (
       <div>
-        <h1>Medicinal & Recreational Marijuana Tax Revenue (In Millions)</h1>
+        <h1>Monthly Medicinal & Recreational Marijuana Tax Revenue</h1>
         <Line
           data={monthlyTaxdata}
-          height={550}
-          width={500}
+          height={200}
+          width={200}
           options={{
             maintainAspectRatio: false,
             scaleBeginAtZero: true,
@@ -138,7 +165,10 @@ class MonthlyTaxData extends Component {
           }}
         />
         <h1>Colorado Marijuana Tax Revenue Since February 2014: ${this.state.completeTotal}</h1>
+        <h1>Nevada Marijuana Tax Revenue Since January 2017: ${this.state.completeTotal}</h1>
         <h1>Oregon Marijuana Tax Revenue Since February 2016: ${this.state.completeTotal}</h1>
+
+        <h1>States Average $ Million In Tax Revenue Per Month</h1>
       </div>
     )
   }
