@@ -14,7 +14,31 @@ const monthlyTaxdata = {
     'January (2018)', 'February (2018)', 'March (2018)', 'April (2018)', 'June (2018)', 'July (2018)', 'August (2018)', 'September (2018)', 'October (2018)', 'November (2018)', 'December (2018)'
 
   ],
-  datasets: [
+  datasets: [    {
+      label: 'California',
+      data: [
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+        null, null, null, null, null, null, null, null, null, null, null, null,
+      ],
+      fill: false,
+      lineTension: 0.1,
+      backgroundColor: '#4a8e39',
+      borderColor: '#4a8e39',
+      borderCapStyle: 'butt',
+      borderDash: [],
+      borderDashOffset: 0.0,
+      borderJoinStyle: 'miter',
+      pointBorderColor: '000',
+      pointBackgroundColor: '#000',
+      pointBorderWidth: 5,
+      pointHoverRadius: 10,
+      pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+      pointHoverBorderColor: 'rgba(220,220,220,1)',
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
+    },
     {
       label: 'Colorado',
       data: [
@@ -133,20 +157,18 @@ class MonthlyTaxData extends Component {
         <h1>Monthly Medicinal & Recreational Marijuana Tax Revenue</h1>
         <Line
           data={monthlyTaxdata}
-          height={200}
-          width={200}
+          height={50}
+          width={100}
           options={{
             maintainAspectRatio: false,
             scaleBeginAtZero: true,
             responsive: true,
             scales: {
-              // xAxes: [{
-              //   ticks: {
-              //     min: 0,
-              //     beginAtZero: true,
-              //     stepSize: 1000000,
-              //   },
-              // }],
+              xAxes: [{
+                ticks: {
+                  autoSkip: false
+                },
+              }],
               yAxes: [{
                   ticks: {
                       // Include dollar signs and commas
@@ -164,6 +186,7 @@ class MonthlyTaxData extends Component {
             },
           }}
         />
+        <h1>California Marijuana Tax Revenue Since February 2014: ${this.state.completeTotal}</h1>
         <h1>Colorado Marijuana Tax Revenue Since February 2014: ${this.state.completeTotal}</h1>
         <h1>Nevada Marijuana Tax Revenue Since January 2017: ${this.state.completeTotal}</h1>
         <h1>Oregon Marijuana Tax Revenue Since February 2016: ${this.state.completeTotal}</h1>
