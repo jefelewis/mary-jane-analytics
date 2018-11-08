@@ -35,7 +35,7 @@ const monthlyTaxdata = {
       pointBorderColor: 'rgba(75,192,192,1)',
       pointBackgroundColor: '#fff',
       pointBorderWidth: 1,
-      pointHoverRadius: 5,
+      pointHoverRadius: 10,
       pointHoverBackgroundColor: 'rgba(75,192,192,1)',
       pointHoverBorderColor: 'rgba(220,220,220,1)',
       pointHoverBorderWidth: 2,
@@ -62,7 +62,7 @@ const monthlyTaxdata = {
       pointBorderColor: 'rgba(75,192,192,1)',
       pointBackgroundColor: '#fff',
       pointBorderWidth: 1,
-      pointHoverRadius: 5,
+      pointHoverRadius: 10,
       pointHoverBackgroundColor: 'rgba(75,192,192,1)',
       pointHoverBorderColor: 'rgba(220,220,220,1)',
       pointHoverBorderWidth: 2,
@@ -103,7 +103,7 @@ class MonthlyTaxData extends Component {
   render () {
     return (
       <div>
-        <h1>Marijuana Tax Revenue (Medicinal & Recreational)</h1>
+        <h1>Medicinal & Recreational Marijuana Tax Revenue (In Millions)</h1>
         <Line
           data={monthlyTaxdata}
           height={550}
@@ -113,19 +113,25 @@ class MonthlyTaxData extends Component {
             scaleBeginAtZero: true,
             responsive: true,
             scales: {
-              xAxes: [{
-                ticks: {
-                  min: 0,
-                  beginAtZero: true,
-                  stepSize: 10000,
-                },
-              }],
+              // xAxes: [{
+              //   ticks: {
+              //     min: 0,
+              //     beginAtZero: true,
+              //     stepSize: 1000000,
+              //   },
+              // }],
               yAxes: [{
                   ticks: {
-                      // Include a dollar sign in the ticks
-                      callback (value, index, values) {
-                          return `$${  value}`;
-                      },
+                      // Include dollar signs and commas
+                      callback: function(value, index, values) {
+                        value = value.toString();
+                        value = value.split(/(?=(?:...)*$)/);
+                        value = value.join(',');
+                        return `$${  value}`;
+                    },
+                    min: 0,
+                    beginAtZero: true,
+                    stepSize: 1000000,
                   },
               }],
             },
