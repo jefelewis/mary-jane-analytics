@@ -5,6 +5,7 @@ import { hot } from 'react-hot-loader'
 
 // Imports: CSS
 import './app.css'
+import './css/footer.css'
 
 // Imports: Components
 import ColoradoSalesData from './components/ColoradoSalesData'
@@ -12,6 +13,8 @@ import RecreationalStates from './components/RecreationalStates'
 import MedicinalStates from './components/MedicinalStates'
 import ColoradoTaxData from './components/ColoradoTaxData'
 import MonthlyTaxData from './components/MonthlyTaxData'
+import TaxDistribution from './components/TaxDistribution'
+import Footer from './components/Footer'
 
 // React Application
 const App = () => (
@@ -27,8 +30,9 @@ const App = () => (
         <RecreationalStates />
         <MedicinalStates /> */}
         <MonthlyTaxData />
+        <TaxDistribution />
+        <Footer />
       </div>
-
     </div>
   </Router>
 )
