@@ -111,6 +111,26 @@ class TaxDistribution extends Component {
         />
 
         <h2>Here's How Washington's Marijuana Tax Revenue Is Allocated:</h2>
+        <h3>2014</h3>
+        <ul>
+          <li><b>General Fund:</b> $</li>
+          <li><b>Basic Health :</b> $</li>
+          <li><b>Cities & Counties:</b> $</li>
+          <li><b>Education, Prevention:</b> $</li>
+          <li><b>Research:</b> $</li>
+          <li><b>Other:</b> $</li>
+        </ul>
+
+        <h3>2015</h3>
+        <ul>
+          <li><b>General Fund:</b> $</li>
+          <li><b>Basic Health :</b> $</li>
+          <li><b>Cities & Counties:</b> $</li>
+          <li><b>Education, Prevention:</b> $</li>
+          <li><b>Research:</b> $</li>
+          <li><b>Other:</b> $</li>
+        </ul>
+
         <h3>2016</h3>
         <ul>
           <li><b>General Fund:</b> $51,048,900</li>
@@ -121,14 +141,14 @@ class TaxDistribution extends Component {
           <li><b>Other:</b> $8,121,424</li>
         </ul>
 
-        <h3>2017</h3>
+        <h3>2017 (Total: $340,826,924?)</h3>
         <ul>
-          <li><b>General Fund:</b> $96.6 Million Dollars</li>
-          <li><b>Basic Health :</b> $145.7 Million Dollars</li>
-          <li><b>Cities & Counties:</b> $55.5 Million Dollars</li>
-          <li><b>Education, Prevention:</b> $44.1 Million Dollars</li>
-          <li><b>Research:</b> $2.7 Million Dollars</li>
-          <li><b>Other:</b> $17.4 Million Dollars</li>
+          <li><b>General Fund:</b> $96.6 Million</li>
+          <li><b>Basic Health :</b> $145.7 Million</li>
+          <li><b>Cities & Counties:</b> $55.5 Million</li>
+          <li><b>Education, Prevention:</b> $44.1 Million</li>
+          <li><b>Research:</b> $2.7 Million</li>
+          <li><b>Other:</b> $17.4 Million</li>
         </ul>
 
 

@@ -15,10 +15,9 @@ class TaxDistribution extends Component {
     return (
       <div>
         <br></br>
-        <h2>Here's How Colorados's Marijuana Tax Revenue Is Allocated:</h2>
-
-        <h2>Colorado</h2>
-        <h3>2014</h3>
+        <h2>Here's How Colorado's Marijuana Tax Revenue Is Allocated:</h2>
+        <h3>2014 (Total: $67,594,325?)
+        </h3>
         <ul>
           <li><b>General Fund: </b> $27.7 Million Dollars</li>
           <li><b>Distribution to Local Governments: </b> $5.7 Million Dollars</li>
