@@ -110,7 +110,7 @@ class TaxDistribution extends Component {
           }}
         />
 
-        <h2>Washington</h2>
+        <h2>Here's How Washington's Marijuana Tax Revenue Is Allocated:</h2>
         <h3>2016</h3>
         <ul>
           <li><b>General Fund:</b> $51,048,900</li>
