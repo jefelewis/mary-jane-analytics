@@ -8,7 +8,7 @@
 The data comes directly from each State. Below is a list of available states and data sources.
 
 | State              | Legislation                  | Retail Sales Effective Date | Data Source                      |
-| -------------------| ---------------------------- | --------------------------- | -----------------
+| :----------------- | :--------------------------  | :-------------------------  | :--------------------------------------------------
 | Alaska (AK)        | Measure 2                    | 02/24/2015                  | [Source](http://tax.alaska.gov/programs/programs/reports/Index.aspx)
 | California (CA)    | Proposition 64               | 01/01/2018                  | [Source]()
 | Colorado (CO)      | Amendment 64                 | 01/01/2014                  | [Source](https://www.colorado.gov/pacific/revenue/colorado-marijuana-tax-data)
