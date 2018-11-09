@@ -27,10 +27,10 @@ class NevadaTaxDistribution extends Component {
 
         <h3>2017 (Total: $)</h3>
         <ul>
-          <li><b>Administration:</b> $</li>
-          <li><b>Distributive School Account:</b> $</li>
-          <li><b>Local Government:</b> $</li>
-          <li><b>Rainy Day Fund:</b> $</li>
+          <li><b>Administration:</b> $5,000,000</li>
+          <li><b>Distributive School Account:</b> $27,000,000</li>
+          <li><b>Local Government:</b> $5,000,000</li>
+          <li><b>Rainy Day Fund:</b> $42,500,000</li>
 
         </ul>
       </div>

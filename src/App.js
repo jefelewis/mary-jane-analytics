@@ -16,6 +16,7 @@ import MonthlyTaxData from './components/MonthlyTaxData'
 import CaliforniaTaxDistribution from './components/CaliforniaTaxDistribution'
 import ColoradoTaxDistribution from './components/ColoradoTaxDistribution'
 import NevadaTaxDistribution from './components/NevadaTaxDistribution'
+import OregonTaxDistribution from './components/OregonTaxDistribution'
 import WashingtonTaxDistribution from './components/WashingtonTaxDistribution'
 import Footer from './components/Footer'
 
@@ -36,7 +37,8 @@ const App = () => (
         {/* <WashingtonTaxDistribution />
         <ColoradoTaxDistribution />
         <CaliforniaTaxDistribution /> */}
-        <NevadaTaxDistribution />
+        {/* <NevadaTaxDistribution /> */}
+        <OregonTaxDistribution />
         <Footer />
       </div>
     </div>
