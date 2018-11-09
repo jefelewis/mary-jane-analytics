@@ -15,29 +15,35 @@ class TaxDistribution extends Component {
     return (
       <div>
         <br></br>
-        <h1>How Is The Marijuana Tax Revenue Allocated?</h1>
+        <h2>Here's How Colorados's Marijuana Tax Revenue Is Allocated:</h2>
 
         <h2>Colorado</h2>
-        <h3>2014 - 2015</h3>
+        <h3>2014</h3>
         <ul>
           <li><b>General Fund: </b> $27.7 Million Dollars</li>
           <li><b>Distribution to Local Governments: </b> $5.7 Million Dollars</li>
         </ul>
 
-        <h3>2015 - 2016</h3>
+        <h3>2015</h3>
         <ul>
           <li><b>Public School Capital Construction Assistance Fund (Any excess funds are sent to the Public School Fund):</b> $40 Million Dollars</li>
           <li><b>Public School Fund:</b> $2.5 Million Dollars</li>
         </ul>
 
-        <h3>2016 - 2017</h3>
+        <h3>2016</h3>
         <ul>
           <li><b>Public School Capital Construction Assistance Fund (Any excess funds are sent to the Public School Fund):</b> $40 Million Dollars</li>
           <li><b>Public School Fund:</b> $31.6 Million Dollars</li>
         </ul>
 
+
+
+
+
+
+
         <div>
-          <h3>2017 - 2018</h3>
+          <h3>FY 2016 - 2017</h3>
           <h4>Marijuana Tax Cash Fund</h4>
           <ul>
             <li><b>Agriculture:</b> $ Dollars</li>

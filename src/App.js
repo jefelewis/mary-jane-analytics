@@ -13,6 +13,7 @@ import RecreationalStates from './components/RecreationalStates'
 import MedicinalStates from './components/MedicinalStates'
 import ColoradoTaxData from './components/ColoradoTaxData'
 import MonthlyTaxData from './components/MonthlyTaxData'
+import CaliforniaTaxDistribution from './components/CaliforniaTaxDistribution'
 import ColoradoTaxDistribution from './components/ColoradoTaxDistribution'
 import WashingtonTaxDistribution from './components/WashingtonTaxDistribution'
 import Footer from './components/Footer'
@@ -31,8 +32,9 @@ const App = () => (
         <RecreationalStates />
         <MedicinalStates /> */}
         <MonthlyTaxData />
-        {/* <ColoradoTaxDistribution /> */}
         <WashingtonTaxDistribution />
+        <ColoradoTaxDistribution />
+        <CaliforniaTaxDistribution />
         <Footer />
       </div>
     </div>
