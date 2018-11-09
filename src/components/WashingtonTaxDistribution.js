@@ -104,14 +104,23 @@ class TaxDistribution extends Component {
                 }],
                 yAxes: [{
                     stacked: true,
-                }]
-              }
-            }
+                }],
+              },
+            },
           }}
         />
 
-
         <h2>Washington</h2>
+        <h3>2016</h3>
+        <ul>
+          <li><b>General Fund:</b> $51,048,900</li>
+          <li><b>Basic Health :</b> $93,750,000</li>
+          <li><b>Cities & Counties:</b> $6,000,000</li>
+          <li><b>Education, Prevention:</b> $19,482,387</li>
+          <li><b>Research:</b> $1,045,000</li>
+          <li><b>Other:</b> $8,121,424</li>
+        </ul>
+
         <h3>2017</h3>
         <ul>
           <li><b>General Fund:</b> $96.6 Million Dollars</li>
@@ -121,6 +130,8 @@ class TaxDistribution extends Component {
           <li><b>Research:</b> $2.7 Million Dollars</li>
           <li><b>Other:</b> $17.4 Million Dollars</li>
         </ul>
+
+
       </div>
     )
   }
