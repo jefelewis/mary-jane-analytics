@@ -18,6 +18,7 @@ import ColoradoTaxDistribution from './components/ColoradoTaxDistribution'
 import NevadaTaxDistribution from './components/NevadaTaxDistribution'
 import OregonTaxDistribution from './components/OregonTaxDistribution'
 import WashingtonTaxDistribution from './components/WashingtonTaxDistribution'
+import UnitedStatesMap from './components/UnitedStatesMap'
 import Footer from './components/Footer'
 
 // React Application
@@ -39,6 +40,7 @@ const App = () => (
         <CaliforniaTaxDistribution /> */}
         {/* <NevadaTaxDistribution /> */}
         <OregonTaxDistribution />
+        <UnitedStatesMap />
         <Footer />
       </div>
     </div>
