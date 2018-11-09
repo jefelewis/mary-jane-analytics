@@ -13,7 +13,8 @@ import RecreationalStates from './components/RecreationalStates'
 import MedicinalStates from './components/MedicinalStates'
 import ColoradoTaxData from './components/ColoradoTaxData'
 import MonthlyTaxData from './components/MonthlyTaxData'
-import TaxDistribution from './components/TaxDistribution'
+import ColoradoTaxDistribution from './components/ColoradoTaxDistribution'
+import WashingtonTaxDistribution from './components/WashingtonTaxDistribution'
 import Footer from './components/Footer'
 
 // React Application
@@ -30,7 +31,8 @@ const App = () => (
         <RecreationalStates />
         <MedicinalStates /> */}
         <MonthlyTaxData />
-        <TaxDistribution />
+        {/* <ColoradoTaxDistribution /> */}
+        <WashingtonTaxDistribution />
         <Footer />
       </div>
     </div>
