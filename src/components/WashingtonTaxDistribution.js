@@ -5,13 +5,13 @@ import { Bar } from 'react-chartjs-2'
 // ChartJS: Washington
 const washingtonDistribution = {
   labels: [
-    '2017',
+    '2016', '2017',
   ],
   datasets: [
     {
       label: 'General Fund',
       data: [
-        96600000,
+        51048900, 96600000,
       ],
       borderColor: 'rgba(255,99,132,1)',
       borderWidth: 1,
@@ -22,7 +22,7 @@ const washingtonDistribution = {
     {
       label: 'Basic Health',
       data: [
-        145700000,
+        93750000, 145700000,
       ],
       borderColor: 'rgba(255,99,132,1)',
       borderWidth: 1,
@@ -33,7 +33,7 @@ const washingtonDistribution = {
     {
       label: 'Cities & Counties',
       data: [
-        55000000,
+        6000000, 55000000,
       ],
       borderColor: 'rgba(255,99,132,1)',
       borderWidth: 1,
@@ -44,7 +44,7 @@ const washingtonDistribution = {
     {
       label: 'Education, Prevention',
       data: [
-        44100000,
+        19482387, 44100000,
       ],
       borderColor: 'rgba(255,99,132,1)',
       borderWidth: 1,
@@ -55,7 +55,7 @@ const washingtonDistribution = {
     {
       label: 'Research',
       data: [
-        2700000,
+        1045000, 2700000,
       ],
       borderColor: 'rgba(255,99,132,1)',
       borderWidth: 1,
@@ -66,7 +66,7 @@ const washingtonDistribution = {
     {
       label: 'Other',
       data: [
-        17400000,
+        8121424, 17400000,
       ],
       borderColor: 'rgba(255,99,132,1)',
       borderWidth: 1,
