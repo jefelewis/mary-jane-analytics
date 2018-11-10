@@ -114,7 +114,7 @@ class TaxDistribution extends Component {
         <h3>2014</h3>
         <ul>
           <li><b>General Fund:</b> $</li>
-          <li><b>Basic Health :</b> $</li>
+          <li><b>Basic Health:</b> $</li>
           <li><b>Cities & Counties:</b> $</li>
           <li><b>Education, Prevention:</b> $</li>
           <li><b>Research:</b> $</li>
