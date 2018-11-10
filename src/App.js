@@ -19,6 +19,7 @@ import CaliforniaTaxDistribution from './components/CaliforniaTaxDistribution'
 import ColoradoTaxDistribution from './components/ColoradoTaxDistribution'
 import NevadaTaxDistribution from './components/NevadaTaxDistribution'
 import OregonTaxDistribution from './components/OregonTaxDistribution'
+import OregonTaxDistributionNew from './components/OregonTaxDistributionNew'
 import WashingtonTaxDistribution from './components/WashingtonTaxDistribution'
 import UnitedStatesMap from './components/UnitedStatesMap'
 import Footer from './components/Footer'
@@ -27,8 +28,6 @@ import Footer from './components/Footer'
 const App = () => (
   <Router>
     <div>
-      <h1></h1>
-
       <div className="content">
         {/* <ColoradoSalesData />
         <ColoradoTaxData />
@@ -39,7 +38,7 @@ const App = () => (
         <ColoradoTaxDistribution />
         <CaliforniaTaxDistribution /> */}
         {/* <NevadaTaxDistribution /> */}
-        <OregonTaxDistribution />
+        <OregonTaxDistributionNew />
         <UnitedStatesMap />
         <Footer />
       </div>

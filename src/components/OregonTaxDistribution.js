@@ -66,6 +66,9 @@ class OregonTaxDistribution extends Component {
             },
             plugins: {
               labels: {
+                render: 'value',
+                outsidePadding: 4,
+                textMargin: 10,
                 position: 'outside',
                 render: (args) => {
                   return `${args.label}: ${args.value}`
@@ -77,7 +80,7 @@ class OregonTaxDistribution extends Component {
 
         <div>
           <h2>2017 Total</h2>
-          <p>{(OregonTaxDistribution) => getTaxDistributionTotal(OregonTaxDistribution)}</p>
+          <p></p>
         </div>
         <ul>
           <li><b>Cities & Counties:</b> $21,334,247.17</li>
