@@ -5,5 +5,11 @@
 
 .stats p {
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
+}
+
+.stats b {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 36px;
 }
