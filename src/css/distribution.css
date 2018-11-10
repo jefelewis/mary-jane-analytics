@@ -1,3 +1,8 @@
-#distribution {
-  margin: auto  
+.distribution {
+  text-align: center;
+}
+
+.year {
+  display: inline-block;
+  padding: 40px
 }

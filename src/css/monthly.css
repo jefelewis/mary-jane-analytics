@@ -1,0 +1,13 @@
+.monthly {
+  font-size: 19px;
+}
+
+.monthly h1 {
+  text-align: center;
+}
+
+.monthly span {
+  font-size: 25px;
+  font-weight: 600;
+  vertical-align: middle;
+}
