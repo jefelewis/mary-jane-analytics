@@ -168,9 +168,9 @@ class UnitedStatesMap extends Component {
         <p><span><b>Last Updated:</b> 11/07/2018</span></p>
         <br></br>
         <div className="legend">
-          <p>Medicinal & Recreational Legal</p>
-          <p>Medicinal Legal</p>
-          <p>No legalization</p>
+          <p>Medicinal & Recreational Legal (Dark Green)</p>
+          <p>Medicinal Legal (Light Green)</p>
+          <p>No legalization (Grey)</p>
         </div>
       </div>
     )

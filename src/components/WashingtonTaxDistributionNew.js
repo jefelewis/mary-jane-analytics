@@ -90,8 +90,6 @@ class WashingtonTaxDistributionNew extends Component {
     return (
       <div className="distribution">
         <div>
-          <br></br>
-          <br></br>
           <h1>Marijuana Tax Revenue Distribution</h1>
         </div>
 
