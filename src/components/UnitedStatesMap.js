@@ -158,12 +158,18 @@ class UnitedStatesMap extends Component {
   render () {
     return (
       <div className="map">
+        <br></br>
+        <br></br>
+        <h1>Marijuana Legalization Map:</h1>
         <USAMap
           className="map"
           customize={this.statesCustomConfig()}
           tooltip="true"
         />
 
+        <h4>Last Updated: 11/07/2018</h4>
+        <br></br>
+        <br></br>
         <p>Medicinal & Recreational Legal</p>
         <p>Medicinal Legal</p>
         <p>No legalization</p>

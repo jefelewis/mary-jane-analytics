@@ -40,13 +40,22 @@ const colors = ['#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111', '#006600'
 // React Component: Tax Distribution
 class OregonTaxDistributionNew extends Component {
   constructor (props) {
-    super(props)
+    super()
+  }
+
+  getTotal (array) {
+    let total = 0
+
+    for (let i = 0; i < array.length; i++) {
+      total += array[i].quantity
+    }
+    return total
   }
 
   render () {
     return (
       <div>
-        <h1>Oregon (2017)</h1>
+        <h2>Oregon (2017)</h2>
         <Donut
           data={OregonDistribution2017}
           width={400}
@@ -55,6 +64,7 @@ class OregonTaxDistributionNew extends Component {
           internalRadius={500 / 5}
           colorSchema={colors}
         />
+        <h3>Total: {() => this.getTotal(OregonDistribution2017)}</h3>
 
         <Legend
           data={OregonDistribution2017}
