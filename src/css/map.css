@@ -1,7 +1,8 @@
-path {
-  pointer-events: all;
-}
-path:hover {
-  opacity: 0.50;
-  cursor: pointer;
+#map {
+  text-align:center;
+  margin:auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-size: 26px
 }

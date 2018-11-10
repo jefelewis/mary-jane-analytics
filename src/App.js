@@ -25,9 +25,7 @@ import Footer from './components/Footer'
 const App = () => (
   <Router>
     <div>
-      {/* <nav>
-        <h1>Marijuana Facts</h1>
-      </nav> */}
+      <h1></h1>
 
       <div className="content">
         {/* <ColoradoSalesData />
@@ -40,7 +38,7 @@ const App = () => (
         <CaliforniaTaxDistribution /> */}
         {/* <NevadaTaxDistribution /> */}
         <OregonTaxDistribution />
-        <UnitedStatesMap />
+        {/* <UnitedStatesMap /> */}
         <Footer />
       </div>
     </div>
