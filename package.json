@@ -37,6 +37,7 @@
     "britecharts-react": "^0.4.1",
     "chart.js": "^2.7.3",
     "chartjs-plugin-labels": "^1.1.0",
+    "netlify-cli": "^2.2.1",
     "opn": "^5.4.0",
     "react": "^16.6.1",
     "react-chartjs-2": "^2.7.4",
