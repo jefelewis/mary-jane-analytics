@@ -1,6 +1,7 @@
 // Imports: Dependencies
 import React, { Component } from 'react'
-import { Doughnut } from 'react-chartjs-2'
+import { Doughnut, Bar } from 'react-chartjs-2'
+import 'chartjs-plugin-labels';
 
 const taxDistributionData = {
   labels: ['Cities & Counties', 'Department of Revenue Administrative Costs', 'Mental Health, Alcoholism, & Drug Services', 'Oregon Health Authority Drug Treatment & Prevention', 'Oregon State Police', 'State School Fund'],
@@ -29,6 +30,20 @@ class OregonTaxDistribution extends Component {
     }
   }
 
+  addCommasToNumber(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  getTaxDistributionTotal(array) {
+    let total = null;
+
+    for (let i = 0; i <= array.datasets[0].data.length; i++) {
+      total += array[i];
+    }
+
+    return total;
+  }
+
   render () {
     return (
       <div className="distribution">
@@ -36,7 +51,34 @@ class OregonTaxDistribution extends Component {
         <h2>Oregon Marijuana Tax Revenue Distribution:</h2>
         <h4>Disbursement of Funds Began: October 2017</h4>
 
-        <h3>2017</h3>
+        <Doughnut
+          className="allocation"
+          height={400}
+          width={400}
+          data={taxDistributionData}
+          options={{
+            maintainAspectRatio: true,
+            scaleBeginAtZero: false,
+            responsive: false,
+            legend: {
+              display: false,
+              position: 'default',              
+            },
+            plugins: {
+              labels: {
+                position: 'outside',
+                render: (args) => {
+                  return `${args.label}: ${args.value}`
+                }
+              },
+            },
+          }}
+        />
+
+        <div>
+          <h2>2017 Total</h2>
+          <p>{(OregonTaxDistribution) => getTaxDistributionTotal(OregonTaxDistribution)}</p>
+        </div>
         <ul>
           <li><b>Cities & Counties:</b> $21,334,247.17</li>
           <li><b>Department of Revenue Administrative Costs:</b> $6,519,686.21</li>
@@ -46,16 +88,27 @@ class OregonTaxDistribution extends Component {
           <li><b>State School Fund:</b> $42,668,494.35</li>
         </ul>
 
-        <Doughnut
-          height={22}
-          width={22}
+        {/* <Bar
+          height={450}
+          width={450}
           data={taxDistributionData}
           options={{
             maintainAspectRatio: false,
-            scaleBeginAtZero: true,
-            responsive: true,
+            scaleBeginAtZero: false,
+            responsive: false,
+            legend: {
+              position: 'right',
+            },
+            scales: {
+              xAxes: [{
+                  stacked: true,
+              }],
+              yAxes: [{
+                  stacked: true,
+              }],
+            },
           }}
-        />
+        /> */}
 
       </div>
     )

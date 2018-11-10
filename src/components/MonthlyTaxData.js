@@ -385,6 +385,9 @@ class MonthlyTaxData extends Component {
             maintainAspectRatio: true,
             scaleBeginAtZero: true,
             responsive: true,
+            legend: {
+              position: 'top',
+            },
             scales: {
               xAxes: [{
                 ticks: {
