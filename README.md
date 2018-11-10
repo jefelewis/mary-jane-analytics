@@ -24,6 +24,9 @@ The data comes directly from each State. Below is a list of available states and
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming Language
 * [React](https://reactjs.org) - Frontend Framework
 * [React Static](https://react-static.js.org) - Static Site Generator
+* [Chart.js](https://www.chartjs.org) - Charts/Graphs
+* [Britecharts](https://github.com/eventbrite/britecharts) - Charts/Graphs
+* [React USA Map](https://github.com/gabidavila/react-usa-map) - Charts/Graphs
 * [Axios](https://www.npmjs.com/package/axios) - HTTP Requests
 * [Babel 7](https://babeljs.io) - Transpiler/Transcompiler
 * [ESLint](https://eslint.org) - Linter
