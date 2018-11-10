@@ -47,7 +47,6 @@ const colors = ['#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111', '#006600'
 class OregonTaxDistributionNew extends Component {
   constructor (props) {
     super(props)
-
   }
 
   render () {
@@ -69,6 +68,7 @@ class OregonTaxDistributionNew extends Component {
           width={400}
           markerSize={20}
           colorSchema={colors}
+          numberFormat="s"
         />
       </div>
     )
