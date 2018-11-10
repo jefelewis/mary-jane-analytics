@@ -1,8 +1,16 @@
 .distribution {
   text-align: center;
+  padding-top: 50px;
 }
 
 .year {
   display: inline-block;
-  padding: 40px
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+
+}
+
+.legend-entry-value {
+  margin-right: 20px;
 }
