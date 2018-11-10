@@ -158,8 +158,6 @@ class UnitedStatesMap extends Component {
   render () {
     return (
       <div className="map">
-        <br></br>
-        <br></br>
         <h1>Marijuana Legalization Map:</h1>
         <USAMap
           className="map"
@@ -167,12 +165,13 @@ class UnitedStatesMap extends Component {
           tooltip="true"
         />
 
-        <h4>Last Updated: 11/07/2018</h4>
+        <p><span><b>Last Updated:</b> 11/07/2018</span></p>
         <br></br>
-        <br></br>
-        <p>Medicinal & Recreational Legal</p>
-        <p>Medicinal Legal</p>
-        <p>No legalization</p>
+        <div className="legend">
+          <p>Medicinal & Recreational Legal</p>
+          <p>Medicinal Legal</p>
+          <p>No legalization</p>
+        </div>
       </div>
     )
   }

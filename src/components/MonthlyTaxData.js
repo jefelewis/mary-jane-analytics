@@ -377,8 +377,8 @@ class MonthlyTaxData extends Component {
 
   render () {
     return (
-      <div>
-        <h1>Monthly Medicinal & Recreational Marijuana Tax Revenue:</h1>
+      <div className="monthly">
+        <h1>Monthly Medicinal & Recreational Marijuana Tax Revenue</h1>
         <Line
           data={monthlyTaxdata}
           options={{
@@ -413,14 +413,14 @@ class MonthlyTaxData extends Component {
         />
         <br></br>
         <br></br>
-        <h1>States Collecting The Most Marijuana Tax Revenue:</h1>
+        <h1>States Collecting The Most Marijuana Tax Revenue</h1>
         <ol>
-          <h3><li>Washington (Since February 2014): ${this.getCompleteTotal("Washington")}</li></h3>
-          <h3><li>Colorado (Since February 2014): ${this.getCompleteTotal("Colorado")}</li></h3>
-          <h3><li>Oregon (Since February 2016): ${this.getCompleteTotal("Oregon")}</li></h3>
-          <h3><li>California (Since January 2018): ${this.getCompleteTotal("California")}</li></h3>
-          <h3><li>Nevada (Since January 2017): ${this.getCompleteTotal("Nevada")}</li></h3>
-          <h3><li>Alaska (Since October 2016): ${this.getCompleteTotal("Alaska")}</li></h3>
+          <p><li>Washington (Since February 2014): <span>${this.getCompleteTotal("Washington")}</span></li></p>
+          <p><li>Colorado (Since February 2014): <span>${this.getCompleteTotal("Colorado")}</span></li></p>
+          <p><li>Oregon (Since February 2016): <span>${this.getCompleteTotal("Oregon")}</span></li></p>
+          <p><li>California (Since January 2018): <span>${this.getCompleteTotal("California")}</span></li></p>
+          <p><li>Nevada (Since January 2017): <span>${this.getCompleteTotal("Nevada")}</span></li></p>
+          <p><li>Alaska (Since October 2016): <span>${this.getCompleteTotal("Alaska")}</span></li></p>
         </ol>
 
 

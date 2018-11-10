@@ -54,26 +54,29 @@ class OregonTaxDistributionNew extends Component {
 
   render () {
     return (
-      <div>
-        <h2>Oregon (2017)</h2>
-        <Donut
-          data={OregonDistribution2017}
-          width={400}
-          height={400}
-          externalRadius={500 / 2.5}
-          internalRadius={500 / 5}
-          colorSchema={colors}
-        />
-        <h3>Total: {() => this.getTotal(OregonDistribution2017)}</h3>
+      <div className="distribution">
+        <div className="year">
+          <h2>Oregon (2017)</h2>
+          <Donut
+            data={OregonDistribution2017}
+            width={400}
+            height={400}
+            externalRadius={500 / 2.5}
+            internalRadius={500 / 5}
+            colorSchema={colors}
+          />
+          <h3>Total: {() => this.getTotal(OregonDistribution2017)}</h3>
 
-        <Legend
-          data={OregonDistribution2017}
-          height={250}
-          width={500}
-          markerSize={20}
-          colorSchema={colors}
-          numberFormat="$"
-        />
+          <Legend
+            data={OregonDistribution2017}
+            height={250}
+            width={500}
+            markerSize={20}
+            colorSchema={colors}
+            numberFormat="$"
+          />
+
+        </div>
       </div>
     )
   }

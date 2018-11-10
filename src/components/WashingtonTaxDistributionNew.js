@@ -88,11 +88,14 @@ class WashingtonTaxDistributionNew extends Component {
 
   render () {
     return (
-      <div>
+      <div className="distribution">
         <div>
           <br></br>
           <br></br>
-          <h1>Marijuana Tax Revenue Distribution:</h1>
+          <h1>Marijuana Tax Revenue Distribution</h1>
+        </div>
+
+        <div className="year">
           <h2>Washington (2016)</h2>
           <Donut
             data={WashingtonDistribution2016}
@@ -114,7 +117,7 @@ class WashingtonTaxDistributionNew extends Component {
           />
         </div>
 
-        <div>
+        <div className="year">
           <h2>Washington (2017)</h2>
           <Donut
             data={WashingtonDistribution2017}
