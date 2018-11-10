@@ -161,8 +161,9 @@ class UnitedStatesMap extends Component {
 
   render () {
     return (
-      <div className="App">
+      <div className="map">
         <USAMap
+          className="map"
           customize={this.statesCustomConfig()}
           tooltip="true"
         />

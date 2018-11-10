@@ -38,7 +38,7 @@ const App = () => (
         <CaliforniaTaxDistribution /> */}
         {/* <NevadaTaxDistribution /> */}
         <OregonTaxDistribution />
-        {/* <UnitedStatesMap /> */}
+        <UnitedStatesMap />
         <Footer />
       </div>
     </div>
