@@ -79,10 +79,10 @@ class WashingtonTaxDistributionNew extends Component {
   }
 
   getTotal (array) {
-    let total = null
+    let total = 0
 
     for (let i = 0; i < array.length; i++) {
-      total += array[i]
+      total += array[i].quantity
     }
     return total
   }
@@ -92,7 +92,7 @@ class WashingtonTaxDistributionNew extends Component {
       <div>
         <div>
           <h1>Washington (2016)</h1>
-          <h2>Total: </h2>
+          <h2>Total: {() => this.getTotal(WashingtonDistribution2016)}</h2>
           <Donut
             data={WashingtonDistribution2016}
             width={400}
@@ -114,6 +114,7 @@ class WashingtonTaxDistributionNew extends Component {
 
         <div>
           <h1>Washington (2017)</h1>
+          <h2>Total: {() => this.getTotal(WashingtonDistribution2017)}</h2>
           <Donut
             data={WashingtonDistribution2017}
             width={400}
