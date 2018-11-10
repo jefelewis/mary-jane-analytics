@@ -18,9 +18,6 @@ class UnitedStatesMap extends Component {
     CA: {
       name: 'California',
       fill: '#006600',
-      values: [{
-        label: 'California', val: 'Recreational & Medicinal Legal',
-      }],
     },
     CO: {
       fill: '#006600',
