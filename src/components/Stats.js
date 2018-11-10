@@ -21,8 +21,8 @@ class Stats extends Component {
   render () {
     return (
       <div className="stats">
-        <p><b>{(states.length/50)*100}%</b> of America has legalized Recreational & Medicinal Marijuana</p>
-        <p><b>66%</b> of America has legalized Medicinal Marijuana</p>
+        <p><b>{(states.length/50)*100}%</b> of the United States has legalized Recreational & Medicinal Marijuana</p>
+        <p><b>66%</b> of the United States has legalized Medicinal Marijuana</p>
       </div>
     )
   }
