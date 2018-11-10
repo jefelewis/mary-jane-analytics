@@ -41,6 +41,8 @@ const OregonDistribution2017 = [
   },
 ]
 
+const colors = ['#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111', '#006600']
+
 // React Component: Tax Distribution
 class OregonTaxDistributionNew extends Component {
   constructor (props) {
@@ -58,6 +60,7 @@ class OregonTaxDistributionNew extends Component {
           height={400}
           externalRadius={500 / 2.5}
           internalRadius={500 / 5}
+          colorSchema={colors}
         />
 
         <Legend
@@ -65,6 +68,7 @@ class OregonTaxDistributionNew extends Component {
           height={250}
           width={400}
           markerSize={20}
+          colorSchema={colors}
         />
       </div>
     )
