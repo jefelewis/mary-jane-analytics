@@ -1,7 +1,6 @@
 // Imports: Dependencies
 import React, { Component } from 'react'
 import { Donut, Legend } from 'britecharts-react'
-import { throws } from 'assert';
 
 const WashingtonDistribution2016 = [
   {
@@ -74,7 +73,7 @@ const colors = ['#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111', '#006600'
 // React Component: Tax Distribution
 class WashingtonTaxDistributionNew extends Component {
   constructor (props) {
-    super(props)
+    super()
 
   }
 
@@ -91,8 +90,10 @@ class WashingtonTaxDistributionNew extends Component {
     return (
       <div>
         <div>
-          <h1>Washington (2016)</h1>
-          <h2>Total: {() => this.getTotal(WashingtonDistribution2016)}</h2>
+          <br></br>
+          <br></br>
+          <h1>Marijuana Tax Revenue Distribution:</h1>
+          <h2>Washington (2016)</h2>
           <Donut
             data={WashingtonDistribution2016}
             width={400}
@@ -100,7 +101,8 @@ class WashingtonTaxDistributionNew extends Component {
             externalRadius={500 / 2.5}
             internalRadius={500 / 5}
             colorSchema={colors}
-          />
+            />
+          <h3>Total: {() => this.getTotal(WashingtonDistribution2016)}</h3>
 
           <Legend
             data={WashingtonDistribution2016}
@@ -113,8 +115,7 @@ class WashingtonTaxDistributionNew extends Component {
         </div>
 
         <div>
-          <h1>Washington (2017)</h1>
-          <h2>Total: {() => this.getTotal(WashingtonDistribution2017)}</h2>
+          <h2>Washington (2017)</h2>
           <Donut
             data={WashingtonDistribution2017}
             width={400}
@@ -122,8 +123,9 @@ class WashingtonTaxDistributionNew extends Component {
             externalRadius={500 / 2.5}
             internalRadius={500 / 5}
             colorSchema={colors}
-          />
+            />
 
+          <h3>Total: {() => this.getTotal(WashingtonDistribution2017)}</h3>
           <Legend
             data={WashingtonDistribution2017}
             height={250}
