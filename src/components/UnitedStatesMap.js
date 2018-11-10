@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import USAMap from 'react-usa-map'
 
 class UnitedStatesMap extends Component {
-
   statesCustomConfig = () => ({
     AL: {
       // fill: '#050515',
@@ -11,37 +10,41 @@ class UnitedStatesMap extends Component {
       fill: '#006600',
     },
     AZ: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     AR: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     CA: {
+      name: 'California',
       fill: '#006600',
+      values: [{
+        label: 'California', val: 'Recreational & Medicinal Legal',
+      }],
     },
     CO: {
       fill: '#006600',
     },
     CT: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     DE: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     FL: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     GA: {
       // fill: '#050515',
     },
     HI: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     ID: {
       // fill: '#050515',
     },
     IL: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     IN: {
       // fill: '#050515',
@@ -56,13 +59,13 @@ class UnitedStatesMap extends Component {
       // fill: '#050515',
     },
     LA: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     ME: {
       fill: '#006600',
     },
     MD: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     MA: {
       fill: '#006600',
@@ -71,16 +74,16 @@ class UnitedStatesMap extends Component {
       fill: '#006600',
     },
     MN: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     MS: {
       // fill: '#050515',
     },
     MO: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     MT: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     NE: {
       // fill: '#050515',
@@ -89,37 +92,37 @@ class UnitedStatesMap extends Component {
       fill: '#006600',
     },
     NH: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     NJ: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     NM: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     NY: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     NC: {
       // fill: '#050515',
     },
     ND: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     OH: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     OK: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     OR: {
       fill: '#006600',
     },
     PA: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     RI: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     SC: {
       // fill: '#050515',
@@ -134,7 +137,7 @@ class UnitedStatesMap extends Component {
       // fill: '#050515',
     },
     UT: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     VT: {
       fill: '#006600',
@@ -146,7 +149,7 @@ class UnitedStatesMap extends Component {
       fill: '#006600',
     },
     WV: {
-      fill: '#00CC00',
+      fill: '#62D256',
     },
     WI: {
       // fill: '#050515',
@@ -159,7 +162,14 @@ class UnitedStatesMap extends Component {
   render () {
     return (
       <div className="App">
-        <USAMap customize={this.statesCustomConfig()} onClick={this.mapHandler} />
+        <USAMap
+          customize={this.statesCustomConfig()}
+          tooltip="true"
+        />
+
+        <p>Medicinal & Recreational Legal</p>
+        <p>Medicinal Legal</p>
+        <p>No legalization</p>
       </div>
     )
   }
