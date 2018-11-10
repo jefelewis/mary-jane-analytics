@@ -35,6 +35,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "chart.js": "^2.7.3",
+    "chartjs-plugin-labels": "^1.1.0",
     "opn": "^5.4.0",
     "react": "^16.6.1",
     "react-chartjs-2": "^2.7.4",
