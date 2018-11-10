@@ -1,7 +1,5 @@
 // Imports: Dependencies
 import React from 'react'
-import { Router, Link } from 'react-static'
-import { hot } from 'react-hot-loader'
 
 // Imports: CSS
 import './css/app.css'
@@ -9,6 +7,7 @@ import './css/distribution.css'
 import './css/footer.css'
 import './css/header.css'
 import './css/map.css'
+import './css/monthly.css'
 import './css/stats.css'
 
 // Imports: Components
@@ -26,28 +25,24 @@ import Header from './components/Header'
 
 // React Application
 const App = () => (
-  <Router>
-    <div>
-      <div className="content">
-        <Header />
-        <Stats />
-        {/* <ColoradoSalesData />
-        <ColoradoTaxData />
-        <RecreationalStates />
-        <MedicinalStates /> */}
-        <MonthlyTaxData />
-        {/* <WashingtonTaxDistribution />
-        <ColoradoTaxDistribution />
-        <CaliforniaTaxDistribution /> */}
-        {/* <NevadaTaxDistribution /> */}
-        <WashingtonTaxDistributionNew />
-        <OregonTaxDistributionNew />
-        <UnitedStatesMap />
-        <Footer />
-      </div>
-    </div>
-  </Router>
+  <div className="content">
+    <Header />
+    <Stats />
+    {/* <ColoradoSalesData />
+    <ColoradoTaxData />
+    <RecreationalStates />
+    <MedicinalStates /> */}
+    <MonthlyTaxData />
+    {/* <WashingtonTaxDistribution />
+    <ColoradoTaxDistribution />
+    <CaliforniaTaxDistribution /> */}
+    {/* <NevadaTaxDistribution /> */}
+    <WashingtonTaxDistributionNew />
+    <OregonTaxDistributionNew />
+    <UnitedStatesMap />
+    <Footer />
+  </div>
 )
 
 // Exports
-export default hot(module)(App)
+export default App
