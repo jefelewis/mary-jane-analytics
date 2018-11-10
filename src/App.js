@@ -8,6 +8,7 @@ import './css/app.css'
 import './css/distribution.css'
 import './css/map.css'
 import './css/footer.css'
+import './css/header.css'
 
 // Imports: Components
 import ColoradoSalesData from './components/ColoradoSalesData'
@@ -23,12 +24,14 @@ import OregonTaxDistributionNew from './components/OregonTaxDistributionNew'
 import WashingtonTaxDistribution from './components/WashingtonTaxDistribution'
 import UnitedStatesMap from './components/UnitedStatesMap'
 import Footer from './components/Footer'
+import Header from './components/Header'
 
 // React Application
 const App = () => (
   <Router>
     <div>
       <div className="content">
+        <Header />
         {/* <ColoradoSalesData />
         <ColoradoTaxData />
         <RecreationalStates />

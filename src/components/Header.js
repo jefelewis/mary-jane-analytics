@@ -3,7 +3,7 @@ import React from 'react'
 
 // Component: Header
 const Footer = () => (
-  <div id="footer">
+  <div id="header">
     <img src="/static/MaryJaneAnalyticsLogo.png"></img>
   </div>
 )
