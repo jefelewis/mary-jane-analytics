@@ -22,6 +22,7 @@ import NevadaTaxDistribution from './components/NevadaTaxDistribution'
 import OregonTaxDistribution from './components/OregonTaxDistribution'
 import OregonTaxDistributionNew from './components/OregonTaxDistributionNew'
 import WashingtonTaxDistribution from './components/WashingtonTaxDistribution'
+import WashingtonTaxDistributionNew from './components/WashingtonTaxDistributionNew'
 import UnitedStatesMap from './components/UnitedStatesMap'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -41,6 +42,7 @@ const App = () => (
         <ColoradoTaxDistribution />
         <CaliforniaTaxDistribution /> */}
         {/* <NevadaTaxDistribution /> */}
+        <WashingtonTaxDistributionNew />
         <OregonTaxDistributionNew />
         <UnitedStatesMap />
         <Footer />
