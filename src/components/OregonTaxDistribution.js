@@ -31,18 +31,9 @@ class OregonTaxDistribution extends Component {
 
   render () {
     return (
-      <div>
-        <Doughnut
-          data={taxDistributionData}
-          options={{
-            maintainAspectRatio: true,
-            scaleBeginAtZero: true,
-            responsive: true,
-          }}
-        />
-
+      <div className="distribution">
         <br></br>
-        <h2>Here's How Oregon's Marijuana Tax Revenue Is Allocated:</h2>
+        <h2>Oregon Marijuana Tax Revenue Distribution:</h2>
         <h4>Disbursement of Funds Began: October 2017</h4>
 
         <h3>2017</h3>
@@ -54,6 +45,17 @@ class OregonTaxDistribution extends Component {
           <li><b>Oregon State Police:</b> $16,000,685.39</li>
           <li><b>State School Fund:</b> $42,668,494.35</li>
         </ul>
+
+        <Doughnut
+          height={22}
+          width={22}
+          data={taxDistributionData}
+          options={{
+            maintainAspectRatio: false,
+            scaleBeginAtZero: true,
+            responsive: true,
+          }}
+        />
 
       </div>
     )

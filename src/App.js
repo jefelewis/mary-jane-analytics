@@ -4,7 +4,9 @@ import { Router, Link } from 'react-static'
 import { hot } from 'react-hot-loader'
 
 // Imports: CSS
-import './app.css'
+import './css/app.css'
+import './css/distribution.css'
+import './css/map.css'
 import './css/footer.css'
 
 // Imports: Components
