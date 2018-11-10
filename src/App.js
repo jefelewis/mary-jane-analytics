@@ -6,22 +6,19 @@ import { hot } from 'react-hot-loader'
 // Imports: CSS
 import './css/app.css'
 import './css/distribution.css'
-import './css/map.css'
 import './css/footer.css'
 import './css/header.css'
+import './css/map.css'
+import './css/stats.css'
 
 // Imports: Components
 import ColoradoSalesData from './components/ColoradoSalesData'
-import RecreationalStates from './components/RecreationalStates'
-import MedicinalStates from './components/MedicinalStates'
-import ColoradoTaxData from './components/ColoradoTaxData'
+import Stats from './components/Stats'
 import MonthlyTaxData from './components/MonthlyTaxData'
 import CaliforniaTaxDistribution from './components/CaliforniaTaxDistribution'
 import ColoradoTaxDistribution from './components/ColoradoTaxDistribution'
 import NevadaTaxDistribution from './components/NevadaTaxDistribution'
-import OregonTaxDistribution from './components/OregonTaxDistribution'
 import OregonTaxDistributionNew from './components/OregonTaxDistributionNew'
-import WashingtonTaxDistribution from './components/WashingtonTaxDistribution'
 import WashingtonTaxDistributionNew from './components/WashingtonTaxDistributionNew'
 import UnitedStatesMap from './components/UnitedStatesMap'
 import Footer from './components/Footer'
@@ -33,6 +30,7 @@ const App = () => (
     <div>
       <div className="content">
         <Header />
+        <Stats />
         {/* <ColoradoSalesData />
         <ColoradoTaxData />
         <RecreationalStates />
