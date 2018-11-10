@@ -16,7 +16,6 @@ class UnitedStatesMap extends Component {
       fill: '#62D256',
     },
     CA: {
-      name: 'California',
       fill: '#006600',
     },
     CO: {

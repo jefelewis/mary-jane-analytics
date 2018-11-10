@@ -59,10 +59,10 @@ class OregonTaxDistributionNew extends Component {
         <Legend
           data={OregonDistribution2017}
           height={250}
-          width={400}
+          width={500}
           markerSize={20}
           colorSchema={colors}
-          numberFormat="s"
+          numberFormat="$"
         />
       </div>
     )
