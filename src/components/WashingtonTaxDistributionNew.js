@@ -89,10 +89,6 @@ class WashingtonTaxDistributionNew extends Component {
   render () {
     return (
       <div className="distribution">
-        <div>
-          <h1>Marijuana Tax Revenue Distribution</h1>
-        </div>
-
         <div className="year">
           <h2>Washington (2016)</h2>
           <Donut

@@ -33,12 +33,13 @@ const App = () => (
     <RecreationalStates />
     <MedicinalStates /> */}
     <MonthlyTaxData />
+    <CaliforniaTaxDistribution />
     {/* <WashingtonTaxDistribution />
     <ColoradoTaxDistribution />
-    <CaliforniaTaxDistribution /> */}
+    */}
     {/* <NevadaTaxDistribution /> */}
-    <WashingtonTaxDistributionNew />
     <OregonTaxDistributionNew />
+    <WashingtonTaxDistributionNew />
     <UnitedStatesMap />
     <Footer />
   </div>

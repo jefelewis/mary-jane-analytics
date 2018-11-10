@@ -158,7 +158,7 @@ class UnitedStatesMap extends Component {
   render () {
     return (
       <div className="map">
-        <h1>Marijuana Legalization Map:</h1>
+        <h1>Marijuana Legalization Map</h1>
         <USAMap
           className="map"
           customize={this.statesCustomConfig()}

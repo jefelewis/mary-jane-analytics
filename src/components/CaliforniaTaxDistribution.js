@@ -1,5 +1,56 @@
 // Imports: Dependencies
 import React, { Component } from 'react'
+import { Donut, Legend } from 'britecharts-react'
+
+const CaliforniaDistribution2018 = [
+  {
+    id: 1,
+    name: 'Tax Administration & Collection',
+    quantity: null,
+  },
+  {
+    id: 2,
+    name: 'Department of Consumer Affairs',
+    quantity: null,
+  },
+  {
+    id: 3,
+    name: 'California Public Universities',
+    quantity: 10000000,
+  },
+  {
+    id: 4,
+    name: 'California Highway Patrol',
+    quantity: 3000000,
+  },
+  {
+    id: 5,
+    name: 'Business & Economic Development',
+    quantity: 10000000,
+  },
+  {
+    id: 6,
+    name: 'Medicinal Cannabis Research',
+    quantity: 2000000,
+  },
+  {
+    id: 7,
+    name: 'Youth Education, Prevention, Early Intervention, & Treatment',
+    quantity: null,
+  },
+  {
+    id: 8,
+    name: 'Environment Restoration & Protection',
+    quantity: null,
+  },
+  {
+    id: 9,
+    name: 'State & Local Government Law Enforcement',
+    quantity: null,
+  },
+]
+
+const colors = ['#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111', '#006600']
 
 // React Component: Tax Distribution
 class CaliforniaTaxDistribution extends Component {
@@ -9,25 +60,44 @@ class CaliforniaTaxDistribution extends Component {
     this.state = {
     }
   }
+  getTotal (array) {
+    let total = 0
+
+    for (let i = 0; i < array.length; i++) {
+      total += array[i].quantity
+    }
+    return total
+  }
 
   render () {
     return (
       <div>
-        <br></br>
-        <h2>Here's How California's Marijuana Tax Revenue Is Allocated:</h2>
-        <h3>2018 (Total: $)
-        </h3>
-        <ul>
-          <li><b>Tax Administration & Collection: </b> $</li>
-          <li><b>Department of Consumer Affairs: </b> $</li>
-          <li><b>California Public Universities:</b> $10,000,000</li>
-          <li><b>California Highway Patrol:</b> $3,000,000</li>
-          <li><b>Business & Economic Development:</b> $10,000,000</li>
-          <li><b>University of California San Diego Center for Medicinal Cannabis Research:</b> $2,000,000</li>
-          <li><b>Youth Education, Prevention, Early Intervention, & Treatment:</b> $</li>
-          <li><b>Environment Restoration & Protection:</b> $</li>
-          <li><b>State & Local Government Law Enforcement:</b> $</li>
-        </ul>
+        <h1>Marijuana Tax Revenue Distribution</h1>
+
+        <div className="distribution">
+          <div className="year">
+            <h2>California (2018)</h2>
+            <Donut
+              data={CaliforniaDistribution2018}
+              width={400}
+              height={400}
+              externalRadius={500 / 2.5}
+              internalRadius={500 / 5}
+              colorSchema={colors}
+            />
+            <h3>Total: {() => this.getTotal(CaliforniaDistribution2018)}</h3>
+
+            <Legend
+              data={CaliforniaDistribution2018}
+              height={250}
+              width={500}
+              markerSize={20}
+              colorSchema={colors}
+              numberFormat="$"
+            />
+
+          </div>
+        </div>
       </div>
     )
   }
