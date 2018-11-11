@@ -416,37 +416,13 @@ class MonthlyTaxData extends Component {
         <br></br>
         <h1>States Collecting The Most Marijuana Tax Revenue</h1>
         <ol>
-          <p><li>Washington (Since February 2014): <span>${this.getCompleteTotal("Washington")}</span></li></p>
-          <p><li>Colorado (Since February 2014): <span>${this.getCompleteTotal("Colorado")}</span></li></p>
-          <p><li>Oregon (Since February 2016): <span>${this.getCompleteTotal("Oregon")}</span></li></p>
-          <p><li>California (Since January 2018): <span>${this.getCompleteTotal("California")}</span></li></p>
-          <p><li>Nevada (Since January 2017): <span>${this.getCompleteTotal("Nevada")}</span></li></p>
-          <p><li>Alaska (Since October 2016): <span>${this.getCompleteTotal("Alaska")}</span></li></p>
+          <p><li><b>Washington (Since February 2014):</b> <span>${this.getCompleteTotal("Washington")}</span></li></p>
+          <p><li><b>Colorado (Since February 2014):</b> <span>${this.getCompleteTotal("Colorado")}</span></li></p>
+          <p><li><b>Oregon (Since February 2016):</b> <span>${this.getCompleteTotal("Oregon")}</span></li></p>
+          <p><li><b>California (Since January 2018):</b> <span>${this.getCompleteTotal("California")}</span></li></p>
+          <p><li><b>Nevada (Since January 2017):</b> <span>${this.getCompleteTotal("Nevada")}</span></li></p>
+          <p><li><b>Alaska (Since October 2016):</b> <span>${this.getCompleteTotal("Alaska")}</span></li></p>
         </ol>
-
-
-
-        {/* <h2>Alaska Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("Alaska")}</h2>
-        <br></br>
-        <h2>California Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("California")}</h2>
-        <br></br>
-        <h2>Colorado Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("Colorado")}</h2>
-        <br></br>
-        <h2>Maine Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Maine")}</h2>
-        <br></br>
-        <h2>Michigan Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Michigan")}</h2>
-        <br></br>
-        <h2>Massachusetts Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Massachusetts")}</h2>
-        <br></br>
-        <h2>Nevada Marijuana Tax Revenue Since January 2017: ${this.getCompleteTotal("Nevada")}</h2>
-        <br></br>
-        <h2>Oregon Marijuana Tax Revenue Since February 2016: ${this.getCompleteTotal("Oregon")}</h2>
-        <br></br>
-        <h2>Vermont Marijuana Tax Revenue Since July 2017: ${this.getCompleteTotal("Vermont")}</h2>
-        <br></br>
-        <h2>Washington Marijuana Tax Revenue Since February 2014: ${this.getCompleteTotal("Washington")}</h2>
-        <br></br>
-        <h1>States Average $ Million In Tax Revenue Per Month</h1> */}
       </div>
     )
   }
