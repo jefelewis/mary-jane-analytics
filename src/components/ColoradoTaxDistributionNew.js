@@ -190,6 +190,7 @@ class ColoradoTaxDistributionNew extends Component {
     super()
 
     this.getTotal = this.getTotal.bind(this)
+    this.addCommasToNumber = this.addCommasToNumber.bind(this)
   }
 
   getTotal (array) {
@@ -201,8 +202,8 @@ class ColoradoTaxDistributionNew extends Component {
     return this.addCommasToNumber(total)
   }
 
-  addCommasToNumber(number) {
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  addCommasToNumber (number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
   }
 
   render () {

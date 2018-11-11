@@ -160,7 +160,7 @@ class UnitedStatesMap extends Component {
       <div className="map">
         <h1>Marijuana Legalization Map</h1>
         <USAMap
-          className="map"
+          className="states"
           customize={this.statesCustomConfig()}
           tooltip="true"
         />

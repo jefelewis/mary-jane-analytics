@@ -2,6 +2,39 @@
 import React, { Component } from 'react'
 import { Donut, Legend } from 'britecharts-react'
 
+const OregonDistribution2016 = [
+  {
+    id: 1,
+    name: 'Cities & Counties',
+    quantity: null,
+  },
+  {
+    id: 2,
+    name: 'Department of Revenue Administrative Costs',
+    quantity: null,
+  },
+  {
+    id: 3,
+    name: 'Mental Health, Alcoholism, & Drug Services',
+    quantity: null,
+  },
+  {
+    id: 4,
+    name: 'Oregon Health Authority Drug Treatment & Prevention',
+    quantity: null,
+  },
+  {
+    id: 5,
+    name: 'Oregon State Police',
+    quantity: null,
+  },
+  {
+    id: 6,
+    name: 'State School Fund',
+    quantity: null,
+  },
+]
+
 const OregonDistribution2017 = [
   {
     id: 1,
@@ -41,6 +74,9 @@ const colors = ['#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111', '#006600'
 class OregonTaxDistributionNew extends Component {
   constructor (props) {
     super()
+
+    this.getTotal = this.getTotal.bind(this)
+    this.addCommasToNumber = this.addCommasToNumber.bind(this)
   }
 
   getTotal (array) {
@@ -52,13 +88,36 @@ class OregonTaxDistributionNew extends Component {
     return this.addCommasToNumber(total)
   }
 
-  addCommasToNumber(number) {
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  addCommasToNumber (number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
   }
 
   render () {
     return (
       <div className="distribution">
+        <div className="year">
+          <h2>Oregon (2016)</h2>
+          <Donut
+            data={OregonDistribution2016}
+            width={400}
+            height={400}
+            externalRadius={500 / 2.5}
+            internalRadius={500 / 5}
+            colorSchema={colors}
+          />
+          <p><b>Distribution Total:</b> ${this.getTotal(OregonDistribution2016)}</p>
+          <p><b>Funds Remaining:</b> $</p>
+
+          <Legend
+            data={OregonDistribution2016}
+            height={250}
+            width={500}
+            markerSize={20}
+            colorSchema={colors}
+            numberFormat="$"
+          />
+        </div>
+
         <div className="year">
           <h2>Oregon (2017)</h2>
           <Donut
@@ -80,8 +139,8 @@ class OregonTaxDistributionNew extends Component {
             colorSchema={colors}
             numberFormat="$"
           />
-
         </div>
+
       </div>
     )
   }
