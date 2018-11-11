@@ -2,6 +2,8 @@
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: auto;
+  /* width: 50%; */
 }
 
 .map span {
@@ -10,6 +12,12 @@
   padding-bottom: 60px;
   font-size: 18px;
 }
+
+.states {
+  height: auto;
+  width: auto;
+}
+
 
 .legend {
   font-size: 18px;
