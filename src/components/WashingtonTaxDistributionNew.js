@@ -1,7 +1,6 @@
 // Imports: Dependencies
 import React, { Component } from 'react'
 import { Donut, Legend } from 'britecharts-react'
-import { runInThisContext } from 'vm';
 
 const WashingtonDistribution2016 = [
   {
@@ -109,7 +108,8 @@ class WashingtonTaxDistributionNew extends Component {
             colorSchema={colors2}
             />
 
-          <h3>Total: ${this.getTotal(WashingtonDistribution2016)}</h3>
+          <p><b>Distribution Total:</b> ${this.getTotal(WashingtonDistribution2016)}</p>
+          <p><b>Funds Remaining:</b> $</p>
 
           <Legend
             data={WashingtonDistribution2016}
@@ -132,7 +132,8 @@ class WashingtonTaxDistributionNew extends Component {
             colorSchema={colors2}
             />
 
-          <h3>Total: ${this.getTotal(WashingtonDistribution2017)}</h3>
+          <p><b>Distribution Total:</b> ${this.getTotal(WashingtonDistribution2017)}</p>
+          <p><b>Funds Remaining:</b> $</p>
 
           <Legend
             data={WashingtonDistribution2017}
