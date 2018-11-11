@@ -1,6 +1,7 @@
 // Imports: Dependencies
 import React, { Component } from 'react'
 import { Donut, Legend } from 'britecharts-react'
+import { runInThisContext } from 'vm';
 
 const WashingtonDistribution2016 = [
   {
@@ -68,13 +69,17 @@ const WashingtonDistribution2017 = [
   },
 ]
 
-const colors = ['#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111', '#006600']
+//             Light Green Foam Green Light Grey   Grey      Black    Dark Green
+// const colors = ['#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111', '#006600']
+const colors2 = ['#006600', '#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111']
+
 
 // React Component: Tax Distribution
 class WashingtonTaxDistributionNew extends Component {
   constructor (props) {
     super()
 
+    this.getTotal = this.getTotal.bind(this)
   }
 
   getTotal (array) {
@@ -83,7 +88,11 @@ class WashingtonTaxDistributionNew extends Component {
     for (let i = 0; i < array.length; i++) {
       total += array[i].quantity
     }
-    return total
+    return this.addCommasToNumber(total)
+  }
+
+  addCommasToNumber(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
   render () {
@@ -97,16 +106,17 @@ class WashingtonTaxDistributionNew extends Component {
             height={400}
             externalRadius={500 / 2.5}
             internalRadius={500 / 5}
-            colorSchema={colors}
+            colorSchema={colors2}
             />
-          <h3>Total: {() => this.getTotal(WashingtonDistribution2016)}</h3>
+
+          <h3>Total: ${this.getTotal(WashingtonDistribution2016)}</h3>
 
           <Legend
             data={WashingtonDistribution2016}
             height={250}
             width={500}
             markerSize={20}
-            colorSchema={colors}
+            colorSchema={colors2}
             numberFormat="$"
           />
         </div>
@@ -119,16 +129,17 @@ class WashingtonTaxDistributionNew extends Component {
             height={400}
             externalRadius={500 / 2.5}
             internalRadius={500 / 5}
-            colorSchema={colors}
+            colorSchema={colors2}
             />
 
-          <h3>Total: {() => this.getTotal(WashingtonDistribution2017)}</h3>
+          <h3>Total: ${this.getTotal(WashingtonDistribution2017)}</h3>
+
           <Legend
             data={WashingtonDistribution2017}
             height={250}
             width={500}
             markerSize={20}
-            colorSchema={colors}
+            colorSchema={colors2}
             numberFormat="$"
           />
         </div>
