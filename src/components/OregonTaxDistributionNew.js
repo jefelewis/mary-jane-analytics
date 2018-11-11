@@ -49,7 +49,11 @@ class OregonTaxDistributionNew extends Component {
     for (let i = 0; i < array.length; i++) {
       total += array[i].quantity
     }
-    return total
+    return this.addCommasToNumber(total)
+  }
+
+  addCommasToNumber(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
   render () {
@@ -65,7 +69,8 @@ class OregonTaxDistributionNew extends Component {
             internalRadius={500 / 5}
             colorSchema={colors}
           />
-          <h3>Total: {() => this.getTotal(OregonDistribution2017)}</h3>
+          <p><b>Distribution Total:</b> ${this.getTotal(OregonDistribution2017)}</p>
+          <p><b>Funds Remaining:</b> $</p>
 
           <Legend
             data={OregonDistribution2017}
