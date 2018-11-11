@@ -1,4 +1,4 @@
-# United States Marijuana Revenue & Tax Tracker
+# Mary Jane Analytics
 *  [About The Data](#about-the-data)
 *  [Built With](#built-with)
 *  [Getting Started](#getting-started)
