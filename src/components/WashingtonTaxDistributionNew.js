@@ -70,7 +70,7 @@ const WashingtonDistribution2017 = [
 
 //             Light Green Foam Green Light Grey   Grey      Black    Dark Green
 // const colors = ['#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111', '#006600']
-const colors2 = ['#006600', '#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111']
+const colors2 = ['#006600', '#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111', '#2E8B57', '#6B8E23']
 
 
 // React Component: Tax Distribution
