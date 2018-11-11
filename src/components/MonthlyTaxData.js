@@ -396,12 +396,13 @@ class MonthlyTaxData extends Component {
               }],
               yAxes: [{
                   ticks: {
-                      // Include dollar signs and commas
-                      callback: function(value, index, values) {
-                        value = value.toString();
-                        value = value.split(/(?=(?:...)*$)/);
-                        value = value.join(',');
-                        return `$${  value}`;
+                    autoSkip: true,
+                    // Include dollar signs and commas
+                    callback: function(value, index, values) {
+                      value = value.toString();
+                      value = value.split(/(?=(?:...)*$)/);
+                      value = value.join(',');
+                      return `$${  value}`;
                     },
                     min: 0,
                     beginAtZero: true,
