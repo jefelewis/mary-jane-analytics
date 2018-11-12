@@ -14,12 +14,12 @@ import './css/stats.css'
 import ColoradoSalesData from './components/ColoradoSalesData'
 import Stats from './components/Stats'
 import MonthlyTaxData from './components/MonthlyTaxData'
+import AlaskaTaxDistribution from './components/AlaskaTaxDistribution'
 import CaliforniaTaxDistribution from './components/CaliforniaTaxDistribution'
 import ColoradoTaxDistribution from './components/ColoradoTaxDistribution'
-import ColoradoTaxDistributionNew from './components/ColoradoTaxDistributionNew'
-import NevadaTaxDistributionNew from './components/NevadaTaxDistributionNew'
-import OregonTaxDistributionNew from './components/OregonTaxDistributionNew'
-import WashingtonTaxDistributionNew from './components/WashingtonTaxDistributionNew'
+import NevadaTaxDistribution from './components/NevadaTaxDistribution'
+import OregonTaxDistribution from './components/OregonTaxDistribution'
+import WashingtonTaxDistribution from './components/WashingtonTaxDistributionNew'
 import UnitedStatesMap from './components/UnitedStatesMap'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -38,10 +38,11 @@ const App = () => (
     {/* <WashingtonTaxDistribution />
     <ColoradoTaxDistribution />
     */}
-    <ColoradoTaxDistributionNew />
-    <NevadaTaxDistributionNew />
-    <OregonTaxDistributionNew />
-    <WashingtonTaxDistributionNew />
+    <AlaskaTaxDistribution />
+    <ColoradoTaxDistribution />
+    <NevadaTaxDistribution />
+    <OregonTaxDistribution />
+    <WashingtonTaxDistribution />
     <UnitedStatesMap />
     <Footer />
   </div>
