@@ -2,37 +2,25 @@
 import React, { Component } from 'react'
 import { Donut, Legend } from 'britecharts-react'
 
-const NevadaTaxDistribution2017= [
+// Data: Alaska TaxDistribution (2017)
+const AlaskaTaxDistribution2017= [
   {
     id: 1,
-    name: 'Administration',
-    quantity: 5000000,
+    name: 'General Fund',
+    quantity: 879814,
   },
   {
     id: 2,
-    name: 'Distributive School Account',
-    quantity: 27000000,
-  },
-  {
-    id: 3,
-    name: 'Local Government',
-    quantity: 5000000,
-  },
-  {
-    id: 4,
-    name: 'Rainy Day Fund',
-    quantity: 42500000,
+    name: 'Recidivism Reduction',
+    quantity: 869683,
   },
 ]
 
-
-//             Light Green Foam Green Light Grey   Grey      Black    Dark Green
-// const colors = ['#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111', '#006600']
-const colors2 = ['#006600', '#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111', '#2E8B57', '#6B8E23']
+const colors = ['#006600', '#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111', '#2E8B57', '#6B8E23']
 
 
-// React Component: Tax Distribution
-class NevadaTaxDistributionNew extends Component {
+// React Component: Alaska Tax Distribution
+class AlaskaTaxDistribution extends Component {
   constructor (props) {
     super()
 
@@ -81,25 +69,25 @@ class NevadaTaxDistributionNew extends Component {
     return (
       <div className="distribution">
         <div className="year">
-          <h2>Nevada (2017)</h2>
+          <h2>Alaska (2017)</h2>
           <Donut
-            data={NevadaTaxDistribution2017}
+            data={AlaskaTaxDistribution2017}
             width={400}
             height={400}
             externalRadius={500 / 2.5}
             internalRadius={500 / 5}
-            colorSchema={colors2}
+            colorSchema={colors}
             />
 
-          <p><b>Distribution Total:</b> ${this.getTotal(NevadaTaxDistribution2017)}</p>
+          <p><b>Distribution Total:</b> ${this.getTotal(AlaskaTaxDistribution2017)}</p>
           <p><b>Funds Remaining:</b> $</p>
 
           <Legend
-            data={NevadaTaxDistribution2017}
+            data={AlaskaTaxDistribution2017}
             height={250}
             width={500}
             markerSize={20}
-            colorSchema={colors2}
+            colorSchema={colors}
             numberFormat="$"
           />
         </div>
@@ -110,4 +98,4 @@ class NevadaTaxDistributionNew extends Component {
 }
 
 // Exports
-export default NevadaTaxDistributionNew
+export default AlaskaTaxDistribution

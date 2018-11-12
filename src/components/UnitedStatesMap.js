@@ -166,7 +166,6 @@ class UnitedStatesMap extends Component {
         />
 
         <p><span><b>Last Updated:</b> 11/07/2018</span></p>
-        <br></br>
         <div className="legend">
           <p>Medicinal & Recreational Legal (Dark Green)</p>
           <p>Medicinal Legal (Light Green)</p>

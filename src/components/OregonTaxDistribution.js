@@ -70,8 +70,8 @@ const OregonDistribution2017 = [
 
 const colors = ['#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111', '#006600']
 
-// React Component: Tax Distribution
-class OregonTaxDistributionNew extends Component {
+// React Component: Oregon Tax Distribution
+class OregonTaxDistribution extends Component {
   constructor (props) {
     super()
 
@@ -147,4 +147,4 @@ class OregonTaxDistributionNew extends Component {
 }
 
 // Exports
-export default OregonTaxDistributionNew
+export default OregonTaxDistribution

@@ -73,8 +73,8 @@ const WashingtonDistribution2017 = [
 const colors2 = ['#006600', '#4FBC43', '#98F2AA', '#B2B2B2', '#424242', '#111111', '#2E8B57', '#6B8E23']
 
 
-// React Component: Tax Distribution
-class WashingtonTaxDistributionNew extends Component {
+// React Component: Washington Tax Distribution
+class WashingtonTaxDistribution extends Component {
   constructor (props) {
     super()
 
@@ -178,4 +178,4 @@ class WashingtonTaxDistributionNew extends Component {
 }
 
 // Exports
-export default WashingtonTaxDistributionNew
+export default WashingtonTaxDistribution
