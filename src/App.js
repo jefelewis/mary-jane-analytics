@@ -17,7 +17,7 @@ import MonthlyTaxData from './components/MonthlyTaxData'
 import CaliforniaTaxDistribution from './components/CaliforniaTaxDistribution'
 import ColoradoTaxDistribution from './components/ColoradoTaxDistribution'
 import ColoradoTaxDistributionNew from './components/ColoradoTaxDistributionNew'
-import NevadaTaxDistribution from './components/NevadaTaxDistribution'
+import NevadaTaxDistributionNew from './components/NevadaTaxDistributionNew'
 import OregonTaxDistributionNew from './components/OregonTaxDistributionNew'
 import WashingtonTaxDistributionNew from './components/WashingtonTaxDistributionNew'
 import UnitedStatesMap from './components/UnitedStatesMap'
@@ -38,8 +38,8 @@ const App = () => (
     {/* <WashingtonTaxDistribution />
     <ColoradoTaxDistribution />
     */}
-    {/* <NevadaTaxDistribution /> */}
     <ColoradoTaxDistributionNew />
+    <NevadaTaxDistributionNew />
     <OregonTaxDistributionNew />
     <WashingtonTaxDistributionNew />
     <UnitedStatesMap />
