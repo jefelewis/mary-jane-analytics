@@ -231,7 +231,7 @@ class ColoradoTaxDistribution extends Component {
 
           <Legend
             data={ColoradoDistribution2016}
-            height={500}
+            height={750}
             width={500}
             markerSize={20}
             colorSchema={colors2}
@@ -255,7 +255,7 @@ class ColoradoTaxDistribution extends Component {
 
           <Legend
             data={ColoradoDistribution2017}
-            height={500}
+            height={750}
             width={500}
             markerSize={20}
             colorSchema={colors2}
