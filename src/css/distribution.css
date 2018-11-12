@@ -24,5 +24,12 @@ p {
 }
 
 britechart-legend {
+}
+
+svg[id='britechart britechart-legend'] {
+  font-size: 100px !important;
+}
+
+svg[id='legend-entry-name'] {
   font-size: 100px !important;
 }
