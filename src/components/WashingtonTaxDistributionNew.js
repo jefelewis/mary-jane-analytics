@@ -78,6 +78,11 @@ class WashingtonTaxDistributionNew extends Component {
   constructor (props) {
     super()
 
+    this.state = {
+      highlightedSlice: null,
+    }
+
+
     this.getTotal = this.getTotal.bind(this)
     this.addCommasToNumber = this.addCommasToNumber.bind(this)
   }
@@ -95,7 +100,26 @@ class WashingtonTaxDistributionNew extends Component {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
   }
 
+  handleMouseOver (data) {
+    this.setState({
+      highlightedSlice: data.data.id,
+    })
+  }
+
+  handleMouseOut () {
+    this.setState({
+      highlightedSlice: 99999,
+    })
+  }
+
   render () {
+    const legendMargin = {
+      top: 10,
+      bottom: 10,
+      left: 10,
+      right: 30,
+    }
+
     return (
       <div className="distribution">
         <div className="year">
@@ -143,6 +167,8 @@ class WashingtonTaxDistributionNew extends Component {
             markerSize={20}
             colorSchema={colors2}
             numberFormat="$"
+            margin={legendMargin}
+            highlightEntryById={this.state.highlightedSlice}
           />
         </div>
 
