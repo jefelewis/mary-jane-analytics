@@ -207,6 +207,13 @@ class ColoradoTaxDistribution extends Component {
   }
 
   render () {
+    const legendMargin = {
+      top: 0,
+      bottom: 0,
+      left: 40,
+      right: 40,
+    }
+
     return (
       <div className="distribution">
         <div className="year">
@@ -224,11 +231,12 @@ class ColoradoTaxDistribution extends Component {
 
           <Legend
             data={ColoradoDistribution2016}
-            height={250}
+            height={500}
             width={500}
             markerSize={20}
             colorSchema={colors2}
             numberFormat="$"
+            margin={legendMargin}
           />
         </div>
 
@@ -247,11 +255,12 @@ class ColoradoTaxDistribution extends Component {
 
           <Legend
             data={ColoradoDistribution2017}
-            height={250}
+            height={500}
             width={500}
             markerSize={20}
             colorSchema={colors2}
             numberFormat="$"
+            margin={legendMargin}
           />
         </div>
 

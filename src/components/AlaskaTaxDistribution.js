@@ -64,7 +64,7 @@ class AlaskaTaxDistribution extends Component {
     this.setState({
       highlightedSlice: data.data.id,
     })
-    console.log("Fuck", this.state.highlightedSlice)
+    console.log('Fuck', this.state.highlightedSlice)
   }
 
   // On Mouse Leave
@@ -76,11 +76,11 @@ class AlaskaTaxDistribution extends Component {
 
   render () {
     const legendMargin = {
-      top: 10,
-      bottom: 10,
-      left: 10,
-      right: 30,
-    } 
+      top: 0,
+      bottom: 0,
+      left: 40,
+      right: 40,
+    }
 
     return (
       <div className="distribution">
@@ -93,23 +93,22 @@ class AlaskaTaxDistribution extends Component {
             externalRadius={500 / 2.5}
             internalRadius={500 / 5}
             colorSchema={colors}
-            isAnimated={false}
             // customMouseOver={this.onMouseEnter()}
             // customMouseOut={this.onMouseLeave()}
             highlightSliceById={this.state.highlightedSlice}
-
             />
 
           <p><b>Distribution Total:</b> ${this.getTotal(AlaskaTaxDistribution2017)}</p>
 
           <Legend
             data={AlaskaTaxDistribution2017}
-            height={250}
+            height={100}
             width={500}
             markerSize={20}
             colorSchema={colors}
             numberFormat="$"
             highlightEntryById={this.state.highlightedSlice}
+            margin={legendMargin}
           />
         </div>
 

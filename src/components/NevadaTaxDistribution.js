@@ -72,10 +72,10 @@ class NevadaTaxDistribution extends Component {
 
   render () {
     const legendMargin = {
-      top: 10,
-      bottom: 10,
-      left: 10,
-      right: 30,
+      top: 0,
+      bottom: 0,
+      left: 40,
+      right: 40,
     }
 
     return (
@@ -95,11 +95,12 @@ class NevadaTaxDistribution extends Component {
 
           <Legend
             data={NevadaTaxDistribution2017}
-            height={250}
+            height={200}
             width={500}
             markerSize={20}
             colorSchema={colors2}
             numberFormat="$"
+            margin={legendMargin}
           />
         </div>
 

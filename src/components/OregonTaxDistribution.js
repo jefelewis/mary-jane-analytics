@@ -93,6 +93,13 @@ class OregonTaxDistribution extends Component {
   }
 
   render () {
+    const legendMargin = {
+      top: 0,
+      bottom: 0,
+      left: 40,
+      right: 40,
+    }
+
     return (
       <div className="distribution">
         <div className="year">
@@ -114,6 +121,7 @@ class OregonTaxDistribution extends Component {
             markerSize={20}
             colorSchema={colors}
             numberFormat="$"
+            margin={legendMargin}
           />
         </div>
 
@@ -136,6 +144,7 @@ class OregonTaxDistribution extends Component {
             markerSize={20}
             colorSchema={colors}
             numberFormat="$"
+            margin={legendMargin}
           />
         </div>
 
