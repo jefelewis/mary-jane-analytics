@@ -22,3 +22,7 @@ h1 {
 p {
   font-size: 22px;
 }
+
+britechart-legend {
+  font-size: 100px !important;
+}
