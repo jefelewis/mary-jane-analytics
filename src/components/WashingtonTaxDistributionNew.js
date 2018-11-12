@@ -82,9 +82,10 @@ class WashingtonTaxDistribution extends Component {
       highlightedSlice: null,
     }
 
-
     this.getTotal = this.getTotal.bind(this)
     this.addCommasToNumber = this.addCommasToNumber.bind(this)
+    this.handleMouseOver = this.handleMouseOver.bind(this)
+    this.handleMouseOut = this.handleMouseOut.bind(this)
   }
 
   getTotal (array) {
@@ -134,7 +135,6 @@ class WashingtonTaxDistribution extends Component {
             />
 
           <p><b>Distribution Total:</b> ${this.getTotal(WashingtonDistribution2016)}</p>
-          <p><b>Funds Remaining:</b> $</p>
 
           <Legend
             data={WashingtonDistribution2016}
@@ -143,6 +143,7 @@ class WashingtonTaxDistribution extends Component {
             markerSize={20}
             colorSchema={colors2}
             numberFormat="$"
+            highlightEntryById={this.state.highlightedSlice}
           />
         </div>
 
@@ -158,7 +159,6 @@ class WashingtonTaxDistribution extends Component {
             />
 
           <p><b>Distribution Total:</b> ${this.getTotal(WashingtonDistribution2017)}</p>
-          <p><b>Funds Remaining:</b> $</p>
 
           <Legend
             data={WashingtonDistribution2017}

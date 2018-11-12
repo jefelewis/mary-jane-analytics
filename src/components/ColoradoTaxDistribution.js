@@ -221,7 +221,6 @@ class ColoradoTaxDistribution extends Component {
             />
 
           <p><b>Distribution Total:</b> ${this.getTotal(ColoradoDistribution2016)}</p>
-          <p><b>Funds Remaining:</b> $844,858</p>
 
           <Legend
             data={ColoradoDistribution2016}
@@ -245,7 +244,6 @@ class ColoradoTaxDistribution extends Component {
             />
 
           <p><b>Distribution Total:</b> ${this.getTotal(ColoradoDistribution2017)}</p>
-          <p><b>Funds Remaining:</b> $0</p>
 
           <Legend
             data={ColoradoDistribution2017}

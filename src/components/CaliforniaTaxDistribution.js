@@ -1,6 +1,11 @@
 // Imports: Dependencies
 import React, { Component } from 'react'
-import { Donut, Legend } from 'britecharts-react'
+import { Donut, Legend, withResponsiveness } from 'britecharts-react'
+
+// Britecharts
+// const ResponsiveDonut = withResponsiveness(Donut)
+// const ResponsiveLegend = withResponsiveness(Legend)
+
 
 const CaliforniaDistribution2018 = [
   {

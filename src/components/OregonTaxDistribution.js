@@ -106,7 +106,6 @@ class OregonTaxDistribution extends Component {
             colorSchema={colors}
           />
           <p><b>Distribution Total:</b> ${this.getTotal(OregonDistribution2016)}</p>
-          <p><b>Funds Remaining:</b> $</p>
 
           <Legend
             data={OregonDistribution2016}
@@ -129,7 +128,6 @@ class OregonTaxDistribution extends Component {
             colorSchema={colors}
           />
           <p><b>Distribution Total:</b> ${this.getTotal(OregonDistribution2017)}</p>
-          <p><b>Funds Remaining:</b> $</p>
 
           <Legend
             data={OregonDistribution2017}

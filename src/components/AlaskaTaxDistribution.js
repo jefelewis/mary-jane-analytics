@@ -28,31 +28,47 @@ class AlaskaTaxDistribution extends Component {
       highlightedSlice: null,
     }
 
-
     this.getTotal = this.getTotal.bind(this)
     this.addCommasToNumber = this.addCommasToNumber.bind(this)
+    this.onMouseEnter = this.onMouseEnter.bind(this)
+    this.onMouseLeave = this.onMouseLeave.bind(this)
   }
 
+  // Get Total
   getTotal (array) {
-    let total = 0
+    try {
+      let total = 0
 
-    for (let i = 0; i < array.length; i++) {
-      total += array[i].quantity
+      for (let i = 0; i < array.length; i++) {
+        total += array[i].quantity
+      }
+      return this.addCommasToNumber(total)
     }
-    return this.addCommasToNumber(total)
+    catch (error) {
+      console.log(error)
+    }
   }
 
+  // Add Commas To Number
   addCommasToNumber (number) {
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+    try {
+      return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+    }
+    catch (error) {
+      console.log(error)
+    }
   }
 
-  handleMouseOver (data) {
+  // On Mouse Enter
+  onMouseEnter (data) {
     this.setState({
       highlightedSlice: data.data.id,
     })
+    console.log("Fuck", this.state.highlightedSlice)
   }
 
-  handleMouseOut () {
+  // On Mouse Leave
+  onMouseLeave () {
     this.setState({
       highlightedSlice: 99999,
     })
@@ -64,7 +80,7 @@ class AlaskaTaxDistribution extends Component {
       bottom: 10,
       left: 10,
       right: 30,
-    }
+    } 
 
     return (
       <div className="distribution">
@@ -77,10 +93,14 @@ class AlaskaTaxDistribution extends Component {
             externalRadius={500 / 2.5}
             internalRadius={500 / 5}
             colorSchema={colors}
+            isAnimated={false}
+            // customMouseOver={this.onMouseEnter()}
+            // customMouseOut={this.onMouseLeave()}
+            highlightSliceById={this.state.highlightedSlice}
+
             />
 
           <p><b>Distribution Total:</b> ${this.getTotal(AlaskaTaxDistribution2017)}</p>
-          <p><b>Funds Remaining:</b> $</p>
 
           <Legend
             data={AlaskaTaxDistribution2017}
@@ -89,6 +109,7 @@ class AlaskaTaxDistribution extends Component {
             markerSize={20}
             colorSchema={colors}
             numberFormat="$"
+            highlightEntryById={this.state.highlightedSlice}
           />
         </div>
 

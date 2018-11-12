@@ -92,7 +92,6 @@ class NevadaTaxDistribution extends Component {
             />
 
           <p><b>Distribution Total:</b> ${this.getTotal(NevadaTaxDistribution2017)}</p>
-          <p><b>Funds Remaining:</b> $</p>
 
           <Legend
             data={NevadaTaxDistribution2017}
