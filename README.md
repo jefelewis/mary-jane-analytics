@@ -40,8 +40,8 @@ The data comes directly from each State. Below is a list of available states and
 
 ## Screens
 <div align="center">
-  <img src="/assets/screenshots/LineGraph.jpeg" width="1000px"</img>
-  <img src="/assets/screenshots/PieChart.jpeg" width="1000px"</img>
+  <img src="/assets/screenshots/LineGraph.png" width="1000px"</img>
+  <img src="/assets/screenshots/PieChart.png" width="1000px"</img>
 </div>
 
 ## Getting Started
