@@ -19,7 +19,6 @@ The data comes directly from each State. Below is a list of available states and
 | Oregon (OR)        | Measure 91                   | 07/01/2015                  | [Source](https://www.oregon.gov/DOR/programs/gov-research/Pages/research-marijuana.aspx)
 | Vermont (VT)       | H.511                        | 07/01/2018                  | [Source]()
 | Washington (WA)    | Initiative 502               | 07/08/2014                  | [Source](https://lcb.wa.gov/about/annual-report)
-                                  |
 
 ## Built With
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming Language
